@@ -1,0 +1,47 @@
+name: Gerar Juh Quiz - Canva
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Instalar FFmpeg, fontes e rclone
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core fonts-liberation2 fontconfig rclone
+
+      - name: Instalar bibliotecas
+        run: pip install -r requirements.txt
+
+      - name: Gerar vídeos e legendas
+        env:
+          RCLONE_CONFIG_DESTINO_TYPE: drive
+          RCLONE_CONFIG_DESTINO_TOKEN: ${{ secrets.RCLONE_DRIVE_TOKEN }}
+          RCLONE_CONFIG_DESTINO_ROOT_FOLDER_ID: 1IeWfSGxVOgY4nwLQwGxzPZMqRCO81i8B
+        run: python -u gerar_videos_quiz18.py --enviar-drive --lote "${{ github.run_id }}"
+
+      - name: Guardar vídeos e legendas no GitHub
+        uses: actions/upload-artifact@v4
+        with:
+          name: JUH-QUIZ-18-${{ github.run_number }}
+          path: |
+            output_quiz18/*.mp4
+            output_quiz18/*.txt
+          if-no-files-found: error
+          retention-days: 7
+
