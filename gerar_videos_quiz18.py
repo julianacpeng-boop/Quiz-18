@@ -22,11 +22,11 @@ IMAGENS = Path("imagens_perguntas")
 SAIDA = Path("output_quiz18")
 DRIVE_BASE = "destino:saida/Juh-Quiz-18"
 PALETTES = (
-    ("verde_roxo", "quiz_verde_roxo.png", (105, 28, 207)),
-    ("azul_ciano", "quiz_azul_ciano.png", (20, 62, 255)),
-    ("petroleo_turquesa", "quiz_petroleo_turquesa.png", (0, 112, 117)),
-    ("laranja_amarelo", "quiz_laranja_amarelo.png", (246, 111, 0)),
-    ("vinho_coral", "quiz_vinho_coral.png", (119, 17, 61)),
+    ("verde_roxo", "quiz_verde_roxo.png", "resultado_verde_roxo.png", (105, 28, 207)),
+    ("azul_ciano", "quiz_azul_ciano.png", "resultado_azul_ciano.png", (20, 62, 255)),
+    ("petroleo_turquesa", "quiz_petroleo_turquesa.png", "resultado_petroleo_turquesa.png", (0, 112, 117)),
+    ("laranja_amarelo", "quiz_laranja_amarelo.png", "resultado_laranja_amarelo.png", (246, 111, 0)),
+    ("vinho_coral", "quiz_vinho_coral.png", "resultado_vinho_coral.png", (119, 17, 61)),
 )
 PRETO = (14, 14, 18)
 BRANCO = (255, 255, 255)
@@ -109,10 +109,10 @@ def draw_centered_lines(draw, lines, font, center_x, y, fill, stroke_fill=None, 
 
 def desenhar_tema(img, tema, cor_tema):
     draw = ImageDraw.Draw(img)
-    font, lines = fit_lines(draw, tema.upper(), 700, 190, 58, 30, 3)
+    font, lines = fit_lines(draw, tema.upper(), 720, 145, 40, 24, 3)
     altura = len(lines) * (line_height(draw, font) + 5)
-    y = max(42, 165 - altura / 2)
-    draw_centered_lines(draw, lines, font, W // 2 + 45, int(y), BRANCO,
+    y = max(10, 87 - altura / 2)
+    draw_centered_lines(draw, lines, font, W // 2 + 150, int(y), BRANCO,
                         stroke_fill=(18, 18, 22), stroke_width=6, gap=4)
 
 def resolver_imagem(pergunta):
@@ -131,7 +131,7 @@ def resolver_imagem(pergunta):
 
 def desenhar_pergunta(indice_tema, tema, numero, pergunta):
     img, palette = fundo_base(indice_tema)
-    cor_tema = palette[2]
+    cor_tema = palette[3]
     desenhar_tema(img, tema, cor_tema)
     draw = ImageDraw.Draw(img)
 
@@ -172,7 +172,13 @@ def desenhar_pergunta(indice_tema, tema, numero, pergunta):
         text_h = len(lines) * (line_height(draw, font) + 5)
         y = top + (bottom - top - text_h) // 2 - 2
         draw_centered_lines(draw, lines, font, 660, y, PRETO, gap=5)
-        options.append({"row": (77, top, 1005, bottom)})
+        options.append({
+            "row": (77, top, 1005, bottom),
+            "index": idx,
+            "lines": lines,
+            "font": font,
+            "text_y": y,
+        })
     return img, underlines, options
 
 def aplicar_sublinhado(img, strokes, progresso, color):
@@ -207,16 +213,65 @@ def desenhar_lapis(img, x, y):
     out.alpha_composite(pencil, (int(x), int(y)))
     return out.convert("RGB")
 
-def pintar_resposta(img, row, progresso):
-    x1, y1, x2, y2 = row
+def pintar_resposta(img, option, progresso):
+    x1, y1, x2, y2 = option["row"]
+    progresso = max(0.0, min(1.0, progresso))
     out = img.convert("RGBA")
     overlay = Image.new("RGBA", out.size, (0, 0, 0, 0))
     d = ImageDraw.Draw(overlay)
-    # Revela a alternativa certa com contorno verde, preservando o círculo A/B/C.
-    width = max(2, int(12 * max(0.0, min(1.0, progresso))))
-    d.rounded_rectangle([x1, y1, x2, y2], radius=75,
-                        outline=VERDE_CORRETA + (255,), width=width)
-    return Image.alpha_composite(out, overlay).convert("RGB")
+
+    # Preenche todo o cartão correto, mantendo o texto preto e o marcador A/B/C.
+    verde = (70, 211, 91)
+    d.rounded_rectangle(
+        [x1, y1, x2, y2], radius=50,
+        fill=verde + (int(255 * progresso),),
+        outline=(20, 130, 55, int(255 * progresso)),
+        width=max(2, int(6 * progresso)),
+    )
+    out = Image.alpha_composite(out, overlay)
+    d = ImageDraw.Draw(out)
+
+    cx, cy, radius = 164, (y1 + y2) // 2, 78
+    d.ellipse(
+        [cx - radius, cy - radius, cx + radius, cy + radius],
+        fill=(248, 0, 65), outline=BRANCO, width=8,
+    )
+    badge_font = fonte(88, bold=True)
+    letter = LETRAS[option["index"]]
+    box = d.textbbox((0, 0), letter, font=badge_font, stroke_width=1)
+    d.text(
+        (cx - (box[2] - box[0]) / 2, cy - (box[3] - box[1]) / 2 - 8),
+        letter, font=badge_font, fill=BRANCO, stroke_width=1,
+        stroke_fill=(200, 0, 45),
+    )
+    draw_centered_lines(
+        d, option["lines"], option["font"], 660, option["text_y"],
+        PRETO, gap=5,
+    )
+    return out.convert("RGB")
+
+
+def desenhar_tela_final(indice_tema, tema):
+    paleta = PALETTES[((indice_tema - 1) // 3) % len(PALETTES)]
+    path = ASSETS / paleta[2]
+    if not path.exists():
+        raise FileNotFoundError(f"Template de resultado ausente: {path}")
+    final_img = Image.open(path).convert("RGB")
+    if final_img.size != (W, H):
+        final_img = final_img.resize((W, H), Image.Resampling.LANCZOS)
+
+    # Os modelos de resultado trazem "Conhecimentos Gerais" impresso no cabeçalho.
+    # Limpa apenas a faixa do título e escreve nela o tema deste quiz.
+    draw = ImageDraw.Draw(final_img)
+    mascot_left = final_img.crop((0, 0, 215, 205))
+    mascot_part = final_img.crop((0, 130, 245, 205))
+    for y in range(175):
+        draw.line((0, y, W, y), fill=final_img.getpixel((W - 5, y)))
+    final_img.paste(mascot_left, (0, 0))
+    final_img.paste(mascot_part, (0, 130))
+    desenhar_tema(final_img, tema, paleta[3])
+    d = ImageDraw.Draw(final_img)
+    return final_img, paleta
 
 def desenhar_contagem(img, numero):
     out = img.copy()
@@ -326,13 +381,13 @@ def gerar_video_tema(indice_tema, tema, perguntas, legenda, lote_drive=None):
         total = max(18, int(math.ceil(qdur * ANIM_FPS)))
         for fidx in range(total):
             progress = fidx / max(1, total - 1)
-            frame, (tip_x, tip_y) = aplicar_sublinhado(base.copy(), strokes, progress, paleta[2])
+            frame, (tip_x, tip_y) = aplicar_sublinhado(base.copy(), strokes, progress, paleta[3])
             frame = desenhar_lapis(frame, tip_x - 18, tip_y - 34)
             frame.save(frames_q / f"frame_{fidx:04d}.jpg", quality=92)
         clip_q = pasta / f"{q_idx:02d}_pergunta.mp4"
         criar_clipe_animado(frames_q, qdur, clip_q, audio_q)
         clipes.append(clip_q)
-        marcada, _ = aplicar_sublinhado(base.copy(), strokes, 1.0, paleta[2])
+        marcada, _ = aplicar_sublinhado(base.copy(), strokes, 1.0, paleta[3])
 
         for numero in (3, 2, 1):
             png = pasta / f"q{q_idx:02d}_count_{numero}.png"
@@ -351,20 +406,14 @@ def gerar_video_tema(indice_tema, tema, perguntas, legenda, lote_drive=None):
         total_a = max(14, int(math.ceil(adur * ANIM_FPS)))
         for fidx in range(total_a):
             p = fidx / max(1, total_a - 1)
-            answer_frame = pintar_resposta(marcada.copy(), options[correta]["row"], min(1.0, p * 2.4))
+            answer_frame = pintar_resposta(marcada.copy(), options[correta], min(1.0, p * 2.4))
             answer_frame.save(frames_a / f"frame_{fidx:04d}.jpg", quality=92)
         clip_a = pasta / f"{q_idx:02d}_resposta.mp4"
         criar_clipe_animado(frames_a, adur, clip_a, audio_a)
         clipes.append(clip_a)
-        tela_anterior = pintar_resposta(marcada.copy(), options[correta]["row"], 1.0)
+        tela_anterior = pintar_resposta(marcada.copy(), options[correta], 1.0)
 
-    final_img, paleta = fundo_base(indice_tema)
-    desenhar_tema(final_img, tema, paleta[2])
-    d = ImageDraw.Draw(final_img)
-    title_font, title_lines = fit_lines(d, "QUANTAS VOCÊ ACERTOU?", 850, 170, 62, 38, 2)
-    draw_centered_lines(d, title_lines, title_font, W//2, 520, PRETO, gap=8)
-    text_font = fonte(44, bold=True)
-    draw_centered_lines(d, ["Comenta o resultado!"], text_font, W//2, 675, paleta[2], gap=5)
+    final_img, paleta = desenhar_tela_final(indice_tema, tema)
     final_png = pasta / "final.png"
     final_img.save(final_png)
     final_clip = pasta / "99_final.mp4"
