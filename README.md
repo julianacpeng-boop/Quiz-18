@@ -25,7 +25,7 @@ As imagens em raiz do repositório são as cinco bases do Canva, com o espaço d
 3. Clique em **Run workflow**.
 4. Baixe o artefato `JUH-QUIZ-18` quando terminar.
 
-O arquivo `dados_quiz.py` contém um lote inicial copiado do Quiz-17 para demonstrar a estrutura. Edite os temas, perguntas, alternativas, resposta correta e legenda antes de gerar um novo lote. Cada tema pode ter até cinco perguntas; o índice de `correta` começa em zero.
+O arquivo `dados_quiz.py` inclui nove temas iniciais, com três perguntas cada. Edite os temas, perguntas, alternativas, resposta correta e legenda antes de gerar um novo lote. Cada tema pode ter até cinco perguntas; o índice de `correta` começa em zero.
 
 Para ativar o envio ao Drive, cadastre neste repositório o segredo `RCLONE_DRIVE_TOKEN` usado no fluxo do Quiz-13/17. Sem ele, os arquivos continuam disponíveis no artefato do Actions.
 
