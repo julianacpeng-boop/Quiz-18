@@ -1,362 +1,323 @@
-QUIZZES = {'Mistérios do fundo do mar': [{'pergunta': 'A partir de aproximadamente qual profundidade a '
-                                            'luz solar deixa de ser suficiente para a '
-                                            'fotossíntese no oceano?',
-                                'alternativas': ['200 metros', '2 mil metros', '20 mil metros'],
+QUIZZES = {'Inteligência artificial e deepfakes': [{'pergunta': 'O que é um deepfake?',
+                                          'alternativas': ['Um áudio, vídeo ou imagem criado ou alterado com '
+                                                           'inteligência artificial',
+                                                           'Um arquivo que não pode ser copiado',
+                                                           'Um tipo de conexão de internet'],
+                                          'correta': 0,
+                                          'imagem': 'tema01_pergunta01.png'},
+                                         {'pergunta': 'Ao receber uma notícia surpreendente, qual atitude '
+                                                      'ajuda a verificar se ela é confiável?',
+                                          'alternativas': ['Compartilhar antes que desapareça',
+                                                           'Conferir a informação em fontes confiáveis e '
+                                                           'independentes',
+                                                           'Acreditar se tiver muitas curtidas'],
+                                          'correta': 1,
+                                          'imagem': 'tema01_pergunta02.png'},
+                                         {'pergunta': 'O que é um prompt usado em uma ferramenta de IA '
+                                                      'generativa?',
+                                          'alternativas': ['A senha universal do computador',
+                                                           'Um tipo de bateria',
+                                                           'Uma instrução ou pedido enviado à ferramenta'],
+                                          'correta': 2,
+                                          'imagem': 'tema01_pergunta03.png'}],
+ 'Eleições brasileiras de 2026': [{'pergunta': 'Qual instituição coordena a Justiça Eleitoral em âmbito '
+                                               'nacional?',
+                                   'alternativas': ['Supremo Tribunal Federal (STF)',
+                                                    'Tribunal Superior Eleitoral (TSE)',
+                                                    'Banco Central'],
+                                   'correta': 1,
+                                   'imagem': 'tema02_pergunta01.png'},
+                                  {'pergunta': 'O que significa dizer que o voto é secreto?',
+                                   'alternativas': ['O eleitor precisa votar sem documento',
+                                                    'Os resultados nunca são divulgados',
+                                                    'A escolha individual do eleitor não deve ser revelada'],
+                                   'correta': 2,
+                                   'imagem': 'tema02_pergunta02.png'},
+                                  {'pergunta': 'Para que serve a biometria na identificação eleitoral?',
+                                   'alternativas': ['Confirmar a identidade do eleitor',
+                                                    'Escolher o candidato automaticamente',
+                                                    'Contar o número de votos'],
+                                   'correta': 0,
+                                   'imagem': 'tema02_pergunta03.png'}],
+ 'Copa do Mundo de 2026': [{'pergunta': 'Quais países receberam jogos da Copa do Mundo de 2026?',
+                            'alternativas': ['Brasil, Argentina e Chile',
+                                             'Espanha, Portugal e Marrocos',
+                                             'Canadá, México e Estados Unidos'],
+                            'correta': 2,
+                            'imagem': 'tema03_pergunta01.png'},
+                           {'pergunta': 'Quantas seleções participaram da Copa do Mundo masculina de 2026?',
+                            'alternativas': ['48', '32', '24'],
+                            'correta': 0,
+                            'imagem': 'tema03_pergunta02.png'},
+                           {'pergunta': 'Em quantas cidades-sede foram realizados jogos do torneio de 2026?',
+                            'alternativas': ['8', '16', '24'],
+                            'correta': 1,
+                            'imagem': 'tema03_pergunta03.png'}],
+ 'Missão Artemis II e a Lua': [{'pergunta': 'Qual nave levou a tripulação da missão Artemis II?',
+                                'alternativas': ['Orion', 'Voyager', 'Hubble'],
                                 'correta': 0,
-                                'imagem': 'tema01_pergunta01.png'},
-                               {'pergunta': 'Como é chamada a zona oceânica que começa abaixo '
-                                            'de cerca de 6 mil metros?',
-                                'alternativas': ['Zona litoral', 'Zona hadal', 'Zona tropical'],
+                                'imagem': 'tema04_pergunta01.png'},
+                               {'pergunta': 'Qual foi o objetivo principal da Artemis II?',
+                                'alternativas': ['Pousar uma estação na superfície de Marte',
+                                                 'Testar sistemas com astronautas em uma viagem ao redor da '
+                                                 'Lua',
+                                                 'Recolher rochas de Saturno'],
                                 'correta': 1,
-                                'imagem': 'tema01_pergunta02.png'},
-                               {'pergunta': 'O que aumenta muito sobre um submarino conforme '
-                                            'ele desce no oceano?',
-                                'alternativas': ['A luz do Sol',
-                                                 'A temperatura do ar',
-                                                 'A pressão da água'],
+                                'imagem': 'tema04_pergunta02.png'},
+                               {'pergunta': 'Quantos astronautas viajaram na tripulação da Artemis II?',
+                                'alternativas': ['Dois', 'Seis', 'Quatro'],
                                 'correta': 2,
-                                'imagem': 'tema01_pergunta03.png'}],
- 'Animais que parecem inventados': [{'pergunta': 'Que sentido ajuda morcegos a se orientar '
-                                                 'usando sons e ecos?',
-                                     'alternativas': ['Fotossíntese',
-                                                      'Ecolocalização',
-                                                      'Magnetização'],
-                                     'correta': 1,
-                                     'imagem': 'tema02_pergunta01.png'},
-                                    {'pergunta': 'O que muitos polvos liberam na água quando '
-                                                 'precisam escapar de um predador?',
-                                     'alternativas': ['Areia', 'Espuma', 'Tinta'],
-                                     'correta': 2,
-                                     'imagem': 'tema02_pergunta02.png'},
-                                    {'pergunta': 'Qual destes mamíferos põe ovos?',
-                                     'alternativas': ['Ornitorrinco', 'Coala', 'Golfinho'],
-                                     'correta': 0,
-                                     'imagem': 'tema02_pergunta03.png'}],
- 'Civilizações antigas que desapareceram': [{'pergunta': 'Em que região se desenvolveu a '
-                                                         'antiga civilização suméria?',
-                                             'alternativas': ['Escandinávia',
-                                                              'América Central',
-                                                              'Mesopotâmia'],
+                                'imagem': 'tema04_pergunta03.png'}],
+ 'Golpes digitais e cibersegurança': [{'pergunta': 'O que é uma tentativa de phishing?',
+                                       'alternativas': ['Uma atualização automática do celular',
+                                                        'Uma mensagem falsa que tenta roubar dados ou '
+                                                        'induzir a vítima a agir',
+                                                        'Uma cópia de segurança dos arquivos'],
+                                       'correta': 1,
+                                       'imagem': 'tema05_pergunta01.png'},
+                                      {'pergunta': 'Qual é uma vantagem da autenticação em múltiplos '
+                                                   'fatores?',
+                                       'alternativas': ['Dispensar qualquer senha para sempre',
+                                                        'Deixar a conta pública',
+                                                        'Adicionar uma etapa extra de confirmação de acesso'],
+                                       'correta': 2,
+                                       'imagem': 'tema05_pergunta02.png'},
+                                      {'pergunta': 'Por que é melhor usar senhas diferentes em serviços '
+                                                   'diferentes?',
+                                       'alternativas': ['Para reduzir o risco de uma senha vazada abrir '
+                                                        'outras contas',
+                                                        'Para facilitar que desconhecidos adivinhem',
+                                                        'Para evitar atualizações do sistema'],
+                                       'correta': 0,
+                                       'imagem': 'tema05_pergunta03.png'}],
+ 'Mudanças climáticas e eventos extremos': [{'pergunta': 'Qual é a diferença entre tempo e clima?',
+                                             'alternativas': ['Tempo é medido por décadas e clima por '
+                                                              'minutos',
+                                                              'São exatamente a mesma coisa',
+                                                              'Clima descreve padrões observados por '
+                                                              'períodos longos; tempo é a condição de curto '
+                                                              'prazo'],
                                              'correta': 2,
-                                             'imagem': 'tema03_pergunta01.png'},
-                                            {'pergunta': 'Qual sistema de escrita era usado na '
-                                                         'antiga Mesopotâmia?',
-                                             'alternativas': ['Cuneiforme',
-                                                              'Braile',
-                                                              'Alfabeto Morse'],
+                                             'imagem': 'tema06_pergunta01.png'},
+                                            {'pergunta': 'O que significa adaptação às mudanças climáticas?',
+                                             'alternativas': ['Ajustar ações para reduzir danos e riscos '
+                                                              'associados ao clima',
+                                                              'Aumentar a emissão de gases de efeito estufa',
+                                                              'Impedir qualquer mudança natural do tempo'],
                                              'correta': 0,
-                                             'imagem': 'tema03_pergunta02.png'},
-                                            {'pergunta': 'Qual civilização construiu cidades '
-                                                         'como Tikal, na América Central?',
-                                             'alternativas': ['Fenícia', 'Maya', 'Persa'],
+                                             'imagem': 'tema06_pergunta02.png'},
+                                            {'pergunta': 'Qual gás é um importante gás de efeito estufa '
+                                                         'relacionado à queima de combustíveis fósseis?',
+                                             'alternativas': ['Hélio', 'Dióxido de carbono (CO₂)', 'Neônio'],
                                              'correta': 1,
-                                             'imagem': 'tema03_pergunta03.png'}],
- 'O corpo humano e suas curiosidades': [{'pergunta': 'Quantos ossos tem, em média, o esqueleto '
-                                                     'de um adulto?',
-                                         'alternativas': ['206', '106', '306'],
-                                         'correta': 0,
-                                         'imagem': 'tema04_pergunta01.png'},
-                                        {'pergunta': 'Qual é o maior órgão do corpo humano?',
-                                         'alternativas': ['O coração', 'A pele', 'O pulmão'],
-                                         'correta': 1,
-                                         'imagem': 'tema04_pergunta02.png'},
-                                        {'pergunta': 'Qual proteína dos glóbulos vermelhos '
-                                                     'ajuda a transportar oxigênio?',
-                                         'alternativas': ['Queratina',
-                                                          'Insulina',
-                                                          'Hemoglobina'],
-                                         'correta': 2,
-                                         'imagem': 'tema04_pergunta03.png'}],
- 'Planetas e luas com características extremas': [{'pergunta': 'Qual planeta tem um dia '
-                                                               'sideral mais longo que o '
-                                                               'próprio ano?',
-                                                   'alternativas': ['Marte',
-                                                                    'Vênus',
-                                                                    'Júpiter'],
-                                                   'correta': 1,
-                                                   'imagem': 'tema05_pergunta01.png'},
-                                                  {'pergunta': 'Titã, conhecida por seus lagos '
-                                                               'de hidrocarbonetos, é lua de '
-                                                               'qual planeta?',
-                                                   'alternativas': ['Terra',
-                                                                    'Netuno',
-                                                                    'Saturno'],
-                                                   'correta': 2,
-                                                   'imagem': 'tema05_pergunta02.png'},
-                                                  {'pergunta': 'Qual é o maior planeta do '
-                                                               'Sistema Solar?',
-                                                   'alternativas': ['Júpiter',
-                                                                    'Mercúrio',
-                                                                    'Marte'],
-                                                   'correta': 0,
-                                                   'imagem': 'tema05_pergunta03.png'}],
- 'Invenções que surgiram por acidente': [{'pergunta': 'Que substância foi descoberta quando um '
-                                                      'pesquisador percebeu que um mofo '
-                                                      'impedia o crescimento de bactérias?',
-                                          'alternativas': ['Cafeína', 'Lactose', 'Penicilina'],
-                                          'correta': 2,
-                                          'imagem': 'tema06_pergunta01.png'},
-                                         {'pergunta': 'Qual produto surgiu a partir de uma '
-                                                      'cola que grudava pouco, embora seu '
-                                                      'criador buscasse um adesivo forte?',
-                                          'alternativas': ['Post-it',
-                                                           'Fita isolante',
-                                                           'Papel-alumínio'],
-                                          'correta': 0,
-                                          'imagem': 'tema06_pergunta02.png'},
-                                         {'pergunta': 'Que aparelho teve seu desenvolvimento '
-                                                      'impulsionado por pesquisas com ondas de '
-                                                      'radar?',
-                                          'alternativas': ['Telescópio',
-                                                           'Forno de micro-ondas',
-                                                           'Bússola'],
-                                          'correta': 1,
-                                          'imagem': 'tema06_pergunta03.png'}],
- 'Lugares do mundo com fenômenos naturais únicos': [{'pergunta': 'As auroras polares acontecem '
-                                                                 'quando partículas do Sol '
-                                                                 'interagem principalmente com '
-                                                                 'o quê?',
-                                                     'alternativas': ['A atmosfera terrestre',
-                                                                      'O fundo dos oceanos',
-                                                                      'As placas tectônicas'],
-                                                     'correta': 0,
-                                                     'imagem': 'tema07_pergunta01.png'},
-                                                    {'pergunta': 'O que aquece a água '
-                                                                 'subterrânea que alimenta um '
-                                                                 'gêiser?',
-                                                     'alternativas': ['Luz da Lua',
-                                                                      'Calor geotérmico',
-                                                                      'Vento costeiro'],
-                                                     'correta': 1,
-                                                     'imagem': 'tema07_pergunta02.png'},
-                                                    {'pergunta': 'Qual força celeste tem papel '
-                                                                 'principal na formação das '
-                                                                 'marés da Terra?',
-                                                     'alternativas': ['Luz de Vênus',
-                                                                      'Calor de Marte',
-                                                                      'Gravidade da Lua'],
-                                                     'correta': 2,
-                                                     'imagem': 'tema07_pergunta03.png'}],
- 'Mitos populares desmentidos pela ciência': [{'pergunta': 'Por que vemos o relâmpago antes de '
-                                                           'ouvir o trovão?',
-                                               'alternativas': ['O trovão começa depois da '
-                                                                'chuva',
-                                                                'A luz viaja mais rápido que o '
-                                                                'som',
-                                                                'O som não atravessa nuvens'],
-                                               'correta': 1,
-                                               'imagem': 'tema08_pergunta01.png'},
-                                              {'pergunta': 'O que explica principalmente a '
-                                                           'alternância das estações do ano?',
-                                               'alternativas': ['A distância diária entre '
-                                                                'Terra e Sol',
-                                                                'A mudança no tamanho do Sol',
-                                                                'A inclinação do eixo da '
-                                                                'Terra'],
-                                               'correta': 2,
-                                               'imagem': 'tema08_pergunta02.png'},
-                                              {'pergunta': 'De que cor é o sangue que circula '
-                                                           'nas veias dentro do corpo?',
-                                               'alternativas': ['Vermelha', 'Azul', 'Verde'],
-                                               'correta': 0,
-                                               'imagem': 'tema08_pergunta03.png'}],
- 'A origem de objetos que usamos todos os dias': [{'pergunta': 'O grafite usado no lápis é '
-                                                               'feito principalmente de qual '
-                                                               'material?',
-                                                   'alternativas': ['Cálcio',
-                                                                    'Cobre',
-                                                                    'Carbono'],
-                                                   'correta': 2,
-                                                   'imagem': 'tema09_pergunta01.png'},
-                                                  {'pergunta': 'Qual é a função principal do '
-                                                               'código de barras em um '
-                                                               'produto?',
-                                                   'alternativas': ['Identificá-lo e registrar '
-                                                                    'informações',
-                                                                    'Conservar o alimento',
-                                                                    'Medir a temperatura'],
-                                                   'correta': 0,
-                                                   'imagem': 'tema09_pergunta02.png'},
-                                                  {'pergunta': 'Como o zíper mantém duas '
-                                                               'partes do tecido unidas?',
-                                                   'alternativas': ['Por ímãs que se repelem',
-                                                                    'Por dentes que se '
-                                                                    'encaixam',
-                                                                    'Por calor que derrete o '
-                                                                    'tecido'],
-                                                   'correta': 1,
-                                                   'imagem': 'tema09_pergunta03.png'}],
- 'Como surgem os sonhos e as memórias': [{'pergunta': 'Qual estrutura cerebral participa da '
-                                                      'formação de novas memórias?',
-                                          'alternativas': ['Hipocampo', 'Tímpano', 'Pâncreas'],
-                                          'correta': 0,
-                                          'imagem': 'tema10_pergunta01.png'},
-                                         {'pergunta': 'Em qual fase do sono os sonhos vívidos '
-                                                      'são especialmente comuns?',
-                                          'alternativas': ['Sono leve inicial',
-                                                           'Sono REM',
-                                                           'Vigília'],
-                                          'correta': 1,
-                                          'imagem': 'tema10_pergunta02.png'},
-                                         {'pergunta': 'O que o sono ajuda o cérebro a fazer '
-                                                      'com o que aprendemos durante o dia?',
-                                          'alternativas': ['Apagar todos os aprendizados',
-                                                           'Parar a atividade cerebral',
-                                                           'Consolidar memórias'],
-                                          'correta': 2,
-                                          'imagem': 'tema10_pergunta03.png'}],
- 'Construções antigas que ainda intrigam especialistas': [{'pergunta': 'Para que serviam '
-                                                                       'principalmente os '
-                                                                       'aquedutos construídos '
-                                                                       'pelos romanos?',
-                                                           'alternativas': ['Produzir moedas',
-                                                                            'Transportar água',
-                                                                            'Armazenar grãos '
-                                                                            'no alto'],
-                                                           'correta': 1,
-                                                           'imagem': 'tema11_pergunta01.png'},
-                                                          {'pergunta': 'Como um arco de pedra '
-                                                                       'ajuda a sustentar uma '
-                                                                       'construção?',
-                                                           'alternativas': ['Elimina a '
-                                                                            'gravidade',
-                                                                            'Torna as pedras '
-                                                                            'mais leves',
-                                                                            'Distribui forças '
-                                                                            'para os apoios'],
-                                                           'correta': 2,
-                                                           'imagem': 'tema11_pergunta02.png'},
-                                                          {'pergunta': 'Que material os '
-                                                                       'romanos misturavam à '
-                                                                       'cal para produzir um '
-                                                                       'concreto resistente?',
-                                                           'alternativas': ['Cinza vulcânica',
-                                                                            'Pó de carvão',
-                                                                            'Sal marinho'],
-                                                           'correta': 0,
-                                                           'imagem': 'tema11_pergunta03.png'}],
- 'Comidas com histórias surpreendentes': [{'pergunta': 'De qual parte do cacaueiro vem a '
-                                                       'matéria-prima principal do chocolate?',
-                                           'alternativas': ['Das folhas',
-                                                            'Das raízes',
-                                                            'Das sementes do fruto'],
-                                           'correta': 2,
-                                           'imagem': 'tema12_pergunta01.png'},
-                                          {'pergunta': 'O queijo é produzido principalmente a '
-                                                       'partir da transformação de qual '
-                                                       'alimento?',
-                                           'alternativas': ['Leite', 'Arroz', 'Maçã'],
-                                           'correta': 0,
-                                           'imagem': 'tema12_pergunta02.png'},
-                                          {'pergunta': 'Qual é o objetivo principal da '
-                                                       'pasteurização de alimentos líquidos?',
-                                           'alternativas': ['Adicionar vitaminas artificiais',
-                                                            'Reduzir microrganismos nocivos',
-                                                            'Mudar a cor do alimento'],
-                                           'correta': 1,
-                                           'imagem': 'tema12_pergunta03.png'}],
- 'Recordes impressionantes da natureza': [{'pergunta': 'Qual é o animal mais veloz em terra '
-                                                       'firme?',
-                                           'alternativas': ['Guepardo',
-                                                            'Elefante',
-                                                            'Tartaruga-gigante'],
-                                           'correta': 0,
-                                           'imagem': 'tema13_pergunta01.png'},
-                                          {'pergunta': 'Qual é o maior animal conhecido que '
-                                                       'vive atualmente?',
-                                           'alternativas': ['Girafa',
-                                                            'Baleia-azul',
-                                                            'Tubarão-branco'],
-                                           'correta': 1,
-                                           'imagem': 'tema13_pergunta02.png'},
-                                          {'pergunta': 'Qual grupo de árvores inclui algumas '
-                                                       'das espécies mais altas do planeta?',
-                                           'alternativas': ['Cajueiros',
-                                                            'Oliveiras',
-                                                            'Sequoias-costeiras'],
-                                           'correta': 2,
-                                           'imagem': 'tema13_pergunta03.png'}],
- 'Como funcionam as ilusões de ótica': [{'pergunta': 'O que uma ilusão de ótica mostra sobre a '
-                                                     'percepção visual?',
-                                         'alternativas': ['Os olhos sempre medem tudo '
-                                                          'perfeitamente',
-                                                          'O cérebro interpreta as imagens',
-                                                          'As cores não dependem da luz'],
-                                         'correta': 1,
-                                         'imagem': 'tema14_pergunta01.png'},
-                                        {'pergunta': 'Na ilusão de Müller-Lyer, o que faz duas '
-                                                     'linhas iguais parecerem ter comprimentos '
-                                                     'diferentes?',
-                                         'alternativas': ['A cor do papel',
-                                                          'O som emitido pelas linhas',
-                                                          'As pontas ao redor das linhas'],
-                                         'correta': 2,
-                                         'imagem': 'tema14_pergunta02.png'},
-                                        {'pergunta': 'O que o cérebro faz com a pequena área '
-                                                     'sem visão no campo de cada olho?',
-                                         'alternativas': ['Completa informações ao redor',
-                                                          'Apaga a imagem inteira',
-                                                          'Transforma tudo em preto'],
-                                         'correta': 0,
-                                         'imagem': 'tema14_pergunta03.png'}],
- 'Descobertas arqueológicas que mudaram a história': [{'pergunta': 'O método do carbono-14 é '
-                                                                   'usado para estimar a idade '
-                                                                   'de que tipo de material?',
-                                                       'alternativas': ['Rochas sem carbono',
-                                                                        'Objetos de plástico '
-                                                                        'modernos',
-                                                                        'Restos orgânicos'],
-                                                       'correta': 2,
-                                                       'imagem': 'tema15_pergunta01.png'},
-                                                      {'pergunta': 'Em uma escavação, o que as '
-                                                                   'camadas do solo podem '
-                                                                   'ajudar a estudar?',
-                                                       'alternativas': ['A ordem relativa dos '
-                                                                        'vestígios',
-                                                                        'A cor original do céu',
-                                                                        'A velocidade dos '
-                                                                        'ventos antigos'],
-                                                       'correta': 0,
-                                                       'imagem': 'tema15_pergunta02.png'},
-                                                      {'pergunta': 'O que a dendrocronologia '
-                                                                   'analisa para ajudar a '
-                                                                   'datar madeira antiga?',
-                                                       'alternativas': ['Penas de aves',
-                                                                        'Anéis de crescimento '
-                                                                        'das árvores',
-                                                                        'Bolhas em vidro'],
-                                                       'correta': 1,
-                                                       'imagem': 'tema15_pergunta03.png'}]}
+                                             'imagem': 'tema06_pergunta03.png'}],
+ 'Energia renovável e armazenamento': [{'pergunta': 'O que uma turbina eólica transforma principalmente em '
+                                                    'eletricidade?',
+                                        'alternativas': ['A energia do movimento do vento',
+                                                         'A energia das marés lunares',
+                                                         'O calor do interior da Terra'],
+                                        'correta': 0,
+                                        'imagem': 'tema07_pergunta01.png'},
+                                       {'pergunta': 'O que uma célula fotovoltaica faz?',
+                                        'alternativas': ['Transforma água em combustível',
+                                                         'Converte luz em energia elétrica',
+                                                         'Armazena vento em um recipiente'],
+                                        'correta': 1,
+                                        'imagem': 'tema07_pergunta02.png'},
+                                       {'pergunta': 'Para que serve uma bateria conectada a uma rede de '
+                                                    'energia?',
+                                        'alternativas': ['Criar eletricidade sem receber energia',
+                                                         'Mudar a direção do vento',
+                                                         'Guardar energia para uso posterior'],
+                                        'correta': 2,
+                                        'imagem': 'tema07_pergunta03.png'}],
+ 'Carros elétricos e baterias': [{'pergunta': 'O que a frenagem regenerativa pode fazer em um veículo '
+                                              'elétrico?',
+                                  'alternativas': ['Transformar o carro em veículo a gasolina',
+                                                   'Recuperar parte da energia da frenagem e armazená-la na '
+                                                   'bateria',
+                                                   'Eliminar a necessidade de freios'],
+                                  'correta': 1,
+                                  'imagem': 'tema08_pergunta01.png'},
+                                 {'pergunta': 'Em um carro totalmente elétrico, o que fornece energia ao '
+                                              'motor?',
+                                  'alternativas': ['Um tanque de carvão',
+                                                   'Uma turbina a vapor',
+                                                   'Um conjunto de baterias recarregáveis'],
+                                  'correta': 2,
+                                  'imagem': 'tema08_pergunta02.png'},
+                                 {'pergunta': 'Qual é um benefício da reciclagem de baterias usadas?',
+                                  'alternativas': ['Recuperar materiais e reduzir o descarte',
+                                                   'Aumentar o volume de lixo eletrônico',
+                                                   'Tornar as baterias infinitas'],
+                                  'correta': 0,
+                                  'imagem': 'tema08_pergunta03.png'}],
+ 'Computação quântica': [{'pergunta': 'Como se chama a unidade básica de informação de um computador '
+                                      'quântico?',
+                          'alternativas': ['Pixel', 'Byte óptico', 'Qubit'],
+                          'correta': 2,
+                          'imagem': 'tema09_pergunta01.png'},
+                         {'pergunta': 'O que a superposição permite a um qubit representar?',
+                          'alternativas': ['Uma combinação de estados quânticos antes da medição',
+                                           'Somente uma imagem colorida',
+                                           'Uma conexão direta com a internet'],
+                          'correta': 0,
+                          'imagem': 'tema09_pergunta02.png'},
+                         {'pergunta': 'Computadores quânticos são mais rápidos que os clássicos em qualquer '
+                                      'tarefa?',
+                          'alternativas': ['Sim; sempre substituem qualquer computador',
+                                           'Não; podem oferecer vantagem em certos tipos de problema',
+                                           'Sim; dispensam eletricidade'],
+                          'correta': 1,
+                          'imagem': 'tema09_pergunta03.png'}],
+ 'Internet via satélite': [{'pergunta': 'Que tipo de onda transporta sinais de comunicação entre satélites e '
+                                        'estações terrestres?',
+                            'alternativas': ['Ondas de rádio', 'Ondas sonoras no vácuo', 'Ondas de água'],
+                            'correta': 0,
+                            'imagem': 'tema10_pergunta01.png'},
+                           {'pergunta': 'Por que satélites em órbita baixa podem ter menor atraso de '
+                                        'propagação que satélites geoestacionários?',
+                            'alternativas': ['Porque não usam sinais',
+                                             'Porque estão mais próximos da superfície terrestre',
+                                             'Porque ficam parados no solo'],
+                            'correta': 1,
+                            'imagem': 'tema10_pergunta02.png'},
+                           {'pergunta': 'Onde a internet via satélite pode ser especialmente útil?',
+                            'alternativas': ['Somente dentro de túneis',
+                                             'Apenas em redes sem fio de curta distância',
+                                             'Em áreas remotas com pouca infraestrutura terrestre'],
+                            'correta': 2,
+                            'imagem': 'tema10_pergunta03.png'}],
+ 'Lixo espacial e órbitas': [{'pergunta': 'O que pode ser considerado lixo espacial?',
+                              'alternativas': ['Nuvens comuns na atmosfera',
+                                               'Satélites desativados e fragmentos de foguetes em órbita',
+                                               'Meteoritos guardados em museus'],
+                              'correta': 1,
+                              'imagem': 'tema11_pergunta01.png'},
+                             {'pergunta': 'Por que pequenos fragmentos em órbita podem danificar uma nave?',
+                              'alternativas': ['Eles são sempre feitos de gelo macio',
+                                               'Eles caem lentamente como folhas',
+                                               'Eles podem viajar a velocidades muito altas'],
+                              'correta': 2,
+                              'imagem': 'tema11_pergunta02.png'},
+                             {'pergunta': 'Qual medida ajuda a reduzir novos detritos espaciais ao fim de '
+                                          'uma missão?',
+                              'alternativas': ['Planejar a retirada segura do satélite da órbita',
+                                               'Deixar todas as peças soltas no espaço',
+                                               'Desligar o rádio e abandonar qualquer plano'],
+                              'correta': 0,
+                              'imagem': 'tema11_pergunta03.png'}],
+ 'Privacidade digital e biometria': [{'pergunta': 'Qual opção é um dado biométrico?',
+                                      'alternativas': ['A cor de uma mochila',
+                                                       'O modelo de uma cadeira',
+                                                       'A impressão digital'],
+                                      'correta': 2,
+                                      'imagem': 'tema12_pergunta01.png'},
+                                     {'pergunta': 'O que significa coletar apenas os dados necessários para '
+                                                  'um serviço?',
+                                      'alternativas': ['Minimização de dados',
+                                                       'Compartilhamento irrestrito',
+                                                       'Publicação automática'],
+                                      'correta': 0,
+                                      'imagem': 'tema12_pergunta02.png'},
+                                     {'pergunta': 'O que a LGPD considera dado pessoal?',
+                                      'alternativas': ['Qualquer dado sobre o clima',
+                                                       'Informação relacionada a pessoa identificada ou '
+                                                       'identificável',
+                                                       'Somente um número de telefone'],
+                                      'correta': 1,
+                                      'imagem': 'tema12_pergunta03.png'}],
+ 'Inteligência artificial na saúde': [{'pergunta': 'Como a inteligência artificial pode apoiar a análise de '
+                                                   'imagens médicas?',
+                                       'alternativas': ['Ajudando a identificar padrões para revisão '
+                                                        'profissional',
+                                                        'Substituindo todo exame e atendimento',
+                                                        'Garantindo sempre um diagnóstico perfeito'],
+                                       'correta': 0,
+                                       'imagem': 'tema13_pergunta01.png'},
+                                      {'pergunta': 'Por que os dados de treinamento de uma IA em saúde devem '
+                                                   'representar diferentes grupos de pessoas?',
+                                       'alternativas': ['Para deixar o modelo mais difícil de testar',
+                                                        'Para reduzir vieses e melhorar a avaliação em '
+                                                        'populações diversas',
+                                                        'Para dispensar a revisão humana'],
+                                       'correta': 1,
+                                       'imagem': 'tema13_pergunta02.png'},
+                                      {'pergunta': 'Por que profissionais devem revisar recomendações '
+                                                   'geradas por IA na saúde?',
+                                       'alternativas': ['Porque a IA conhece todo o histórico sem receber '
+                                                        'dados',
+                                                        'Porque recomendações digitais nunca mudam',
+                                                        'Porque a ferramenta pode errar e precisa de '
+                                                        'avaliação no contexto do paciente'],
+                                       'correta': 2,
+                                       'imagem': 'tema13_pergunta03.png'}],
+ 'Oceanos em transformação': [{'pergunta': 'O que pode provocar o branqueamento de corais?',
+                               'alternativas': ['A chegada de neve ao recife',
+                                                'Estresse, como o aquecimento da água, que leva corais a '
+                                                'perder algas simbióticas',
+                                                'A luz das estrelas durante a noite'],
+                               'correta': 1,
+                               'imagem': 'tema14_pergunta01.png'},
+                              {'pergunta': 'O que acontece com a química do oceano quando ele absorve mais '
+                                           'dióxido de carbono?',
+                               'alternativas': ['A água vira água doce',
+                                                'O sal desaparece por completo',
+                                                'A água tende a ficar mais ácida'],
+                               'correta': 2,
+                               'imagem': 'tema14_pergunta02.png'},
+                              {'pergunta': 'Como recifes de coral ajudam os ambientes marinhos?',
+                               'alternativas': ['Oferecem abrigo e áreas de alimentação para muitas espécies',
+                                                'Impedem toda forma de vida marinha',
+                                                'Transformam água salgada em petróleo'],
+                               'correta': 0,
+                               'imagem': 'tema14_pergunta03.png'}],
+ 'Amazônia e biodiversidade': [{'pergunta': 'O que significa biodiversidade?',
+                                'alternativas': ['Quantidade de prédios numa cidade',
+                                                 'Número de nuvens no céu',
+                                                 'Variedade de seres vivos e ecossistemas'],
+                                'correta': 2,
+                                'imagem': 'tema15_pergunta01.png'},
+                               {'pergunta': 'Por que a remoção de florestas pode ameaçar animais e plantas?',
+                                'alternativas': ['Pode destruir ou fragmentar seus habitats',
+                                                 'Faz todas as espécies se multiplicarem',
+                                                 'Transforma a floresta em oceano'],
+                                'correta': 0,
+                                'imagem': 'tema15_pergunta02.png'},
+                               {'pergunta': 'O que é um bioma?',
+                                'alternativas': ['Um tipo de satélite artificial',
+                                                 'Uma grande região com clima, vegetação e comunidades de '
+                                                 'vida relacionadas',
+                                                 'Um instrumento para medir terremotos'],
+                                'correta': 1,
+                                'imagem': 'tema15_pergunta03.png'}]}
 
-LEGENDAS = {'Mistérios do fundo do mar': 'Desvende curiosidades das regiões mais profundas do oceano. 🌊 '
-                              '#Oceano #Curiosidades #Quiz',
- 'Animais que parecem inventados': 'O reino animal tem habilidades surpreendentes. 🐾 #Animais '
-                                   '#Natureza #Quiz',
- 'Civilizações antigas que desapareceram': 'Conheça povos que deixaram marcas na história. 🏺 '
-                                           '#História #Antiguidade #Quiz',
- 'O corpo humano e suas curiosidades': 'Teste o que você sabe sobre o corpo. 🧠 #CorpoHumano '
-                                       '#Ciência #Quiz',
- 'Planetas e luas com características extremas': 'Explore mundos curiosos do Sistema Solar. 🪐 '
-                                                 '#Espaço #Astronomia #Quiz',
- 'Invenções que surgiram por acidente': 'Algumas descobertas nasceram de tentativas '
-                                        'inesperadas. 💡 #Invenções #História #Quiz',
- 'Lugares do mundo com fenômenos naturais únicos': 'A Terra guarda cenários e fenômenos '
-                                                   'surpreendentes. 🌍 #Geografia #Natureza '
-                                                   '#Quiz',
- 'Mitos populares desmentidos pela ciência': 'Será que isso é verdade mesmo? Vamos testar. 🔬 '
-                                             '#Ciência #Mitos #Quiz',
- 'A origem de objetos que usamos todos os dias': 'Olhe de novo para os objetos do cotidiano. 🔎 '
-                                                 '#Curiosidades #Tecnologia #Quiz',
- 'Como surgem os sonhos e as memórias': 'Entenda melhor o que acontece durante o sono. 🌙 '
-                                        '#Cérebro #Sono #Quiz',
- 'Construções antigas que ainda intrigam especialistas': 'Engenharia antiga também guarda '
-                                                         'grandes ideias. 🏛️ #História '
-                                                         '#Engenharia #Quiz',
- 'Comidas com histórias surpreendentes': 'Há ciência e história em cada receita. 🍲 #Comida '
-                                         '#Curiosidades #Quiz',
- 'Recordes impressionantes da natureza': 'A natureza supera muitos números humanos. 🐋 '
-                                         '#Natureza #Animais #Quiz',
- 'Como funcionam as ilusões de ótica': 'Seus olhos veem; seu cérebro interpreta. 👁️ #Visão '
-                                       '#Ciência #Quiz',
- 'Descobertas arqueológicas que mudaram a história': 'Cada vestígio pode revelar um passado '
-                                                     'inteiro. 🧭 #Arqueologia #História #Quiz'}
+LEGENDAS = {'Inteligência artificial e deepfakes': 'IA está em todo lugar — mas como saber quando uma imagem ou voz foi '
+                                        'criada? 🤖 #InteligênciaArtificial #Tecnologia #Quiz',
+ 'Eleições brasileiras de 2026': 'Cidadania também é entender como funciona a votação. 🗳️ #Eleições2026 '
+                                 '#Cidadania #Quiz',
+ 'Copa do Mundo de 2026': 'A edição de 2026 trouxe mudanças de formato e sedes. ⚽ #Copa2026 #Futebol #Quiz',
+ 'Missão Artemis II e a Lua': 'A missão tripulada Artemis II marcou uma nova etapa da exploração lunar. 🌙 '
+                              '#ArtemisII #Espaço #Quiz',
+ 'Golpes digitais e cibersegurança': 'Pequenos cuidados ajudam a proteger contas e dados pessoais. 🔐 '
+                                     '#Cibersegurança #InternetSegura #Quiz',
+ 'Mudanças climáticas e eventos extremos': 'Clima, prevenção e adaptação são assuntos cada vez mais '
+                                           'presentes. 🌦️ #Clima #MeioAmbiente #Quiz',
+ 'Energia renovável e armazenamento': 'Fontes renováveis e armazenamento ajudam a transformar o sistema de '
+                                      'energia. ⚡ #Energia #Inovação #Quiz',
+ 'Carros elétricos e baterias': 'A mobilidade elétrica traz novas tecnologias para veículos e baterias. 🚗 '
+                                '#CarroElétrico #Tecnologia #Quiz',
+ 'Computação quântica': 'Qubits e fenômenos da física quântica estão inspirando novas formas de computação. '
+                        '⚛️ #ComputaçãoQuântica #Ciência #Quiz',
+ 'Internet via satélite': 'Satélites podem conectar locais distantes e complementar outras redes. 🛰️ '
+                          '#Internet #Satélites #Quiz',
+ 'Lixo espacial e órbitas': 'Fragmentos em órbita podem ameaçar satélites e missões espaciais. 🌌 '
+                            '#LixoEspacial #Espaço #Quiz',
+ 'Privacidade digital e biometria': 'Dados pessoais e biometria pedem cuidado no mundo conectado. 🛡️ '
+                                    '#Privacidade #LGPD #Quiz',
+ 'Inteligência artificial na saúde': 'IA pode apoiar profissionais de saúde, com avaliação e supervisão '
+                                     'cuidadosas. 🩺 #SaúdeDigital #IA #Quiz',
+ 'Oceanos em transformação': 'Aquecimento e mudanças químicas afetam ecossistemas marinhos. 🌊 #Oceanos '
+                             '#Corais #Quiz',
+ 'Amazônia e biodiversidade': 'A floresta amazônica reúne grande variedade de vida e ecossistemas. 🌳 '
+                              '#Amazônia #Biodiversidade #Quiz'}
