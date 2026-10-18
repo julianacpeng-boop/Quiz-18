@@ -417,7 +417,11 @@ def gerar_video_tema(indice_tema, tema, perguntas, legenda, lote_drive=None):
     final_png = pasta / "final.png"
     final_img.save(final_png)
     final_clip = pasta / "99_final.mp4"
-    criar_clipe_imagem(final_png, 2.2, final_clip)
+    
+    final_audio = pasta / "99_final.mp3"
+    tts_salvar("Quantas você acertou?", final_audio)
+    final_duration = max(2.2, duracao_audio(final_audio) + 0.35)
+    criar_clipe_imagem(final_png, final_duration, final_clip, final_audio)
     clipes.append(final_clip)
 
     saida = SAIDA / f"{indice_tema:02d}_{slug(tema)}.mp4"
