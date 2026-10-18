@@ -18,7 +18,7 @@ O tema de cada vídeo aparece no cabeçalho, no lugar de “Conhecimentos Gerais
 
 As imagens em raiz do repositório são as cinco bases do Canva, com o espaço do título limpo para o tema ser inserido pelo código. As imagens de cada pergunta são opcionais; coloque os arquivos em `imagens_perguntas/` e indique o nome em `dados_quiz.py`. Se uma imagem opcional não existir, o vídeo continua sem ela.
 
-O workflow também gera três prévias visuais: duas perguntas com imagens extraídas das referências do Quiz-17 e a tela final com o placar `___ / 3`. Essas imagens são apenas para validar o layout; não são associadas às perguntas dos nove temas do Quiz-18.
+O workflow também gera três prévias visuais: duas perguntas com imagens extraídas das referências do Quiz-17 e a tela final com o placar `___ / 3`. Elas servem apenas para validar o layout; cada pergunta do banco do Quiz-18 usa sua própria caricatura indicada em `dados_quiz.py`.
 
 ## Gerar
 
