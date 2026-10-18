@@ -1,219 +1,362 @@
-QUIZZES = {'Eleições 2026: como funciona o segundo turno?': [{'pergunta': 'Na eleição para presidente, o que pode levar a um '
-                                                                'segundo turno?',
-                                                    'alternativas': ['Ninguém obter maioria absoluta dos votos válidos',
-                                                                     'A votação terminar empatada em todos os estados',
-                                                                     'Mais da metade dos eleitores votar em branco'],
-                                                    'correta': 0,
-                                                    'imagem': 'tema01_pergunta01.png'},
-                                                   {'pergunta': 'Quem disputa o segundo turno quando ele é necessário?',
-                                                    'alternativas': ['Todas as candidaturas que receberam votos',
-                                                                     'As duas candidaturas mais votadas no primeiro '
-                                                                     'turno',
-                                                                     'As candidaturas escolhidas por sorteio'],
-                                                    'correta': 1,
-                                                    'imagem': 'tema01_pergunta02.png'},
-                                                   {'pergunta': 'Para vencer no primeiro turno para presidente, qual '
-                                                                'resultado é necessário?',
-                                                    'alternativas': ['Ter a maior votação, mesmo abaixo da metade',
-                                                                     'Receber a maioria dos votos brancos e nulos',
-                                                                     'Obter mais da metade dos votos válidos'],
-                                                    'correta': 2,
-                                                    'imagem': 'tema01_pergunta03.png'}],
- 'Redes sociais e eleições: alcance e desinformação': [{'pergunta': 'O que um sistema de recomendação costuma usar '
-                                                                    'para selecionar publicações?',
-                                                        'alternativas': ['A ordem alfabética dos autores',
-                                                                         'Sinais de interesse e interação',
-                                                                         'A idade de cada aparelho'],
-                                                        'correta': 1,
-                                                        'imagem': 'tema02_pergunta01.png'},
-                                                       {'pergunta': 'Antes de repassar uma notícia eleitoral, qual '
-                                                                    'atitude ajuda a evitar desinformação?',
-                                                        'alternativas': ['Acreditar no título sem abrir a publicação',
-                                                                         'Compartilhar se muitas pessoas já enviaram',
-                                                                         'Conferir a origem e comparar com fontes '
-                                                                         'confiáveis'],
-                                                        'correta': 2,
-                                                        'imagem': 'tema02_pergunta02.png'},
-                                                       {'pergunta': 'Uma publicação política paga deve ser entendida '
-                                                                    'como o quê?',
-                                                        'alternativas': ['Conteúdo patrocinado, que merece '
-                                                                         'identificação clara',
-                                                                         'Uma notícia automaticamente verificada',
-                                                                         'Uma mensagem oficial da Justiça Eleitoral'],
-                                                        'correta': 0,
-                                                        'imagem': 'tema02_pergunta03.png'}],
- 'Pré-história: como viviam os primeiros seres humanos?': [{'pergunta': 'Como os grupos humanos conseguiam alimento '
-                                                                        'durante boa parte da Pré-história?',
-                                                            'alternativas': ['Cultivando apenas em grandes fazendas',
-                                                                             'Comprando em mercados',
-                                                                             'Caçando, pescando e coletando'],
-                                                            'correta': 2,
-                                                            'imagem': 'tema03_pergunta01.png'},
-                                                           {'pergunta': 'O que ajudou muitos grupos humanos a cozinhar '
-                                                                        'e se aquecer?',
-                                                            'alternativas': ['O domínio do fogo',
-                                                                             'A invenção da eletricidade',
-                                                                             'A construção de motores'],
-                                                            'correta': 0,
-                                                            'imagem': 'tema03_pergunta02.png'},
-                                                           {'pergunta': 'Qual mudança marcou o início da vida agrícola '
-                                                                        'em várias sociedades?',
-                                                            'alternativas': ['A fabricação de moedas',
-                                                                             'O cultivo de plantas e a criação de '
-                                                                             'animais',
-                                                                             'A navegação a vapor'],
-                                                            'correta': 1,
-                                                            'imagem': 'tema03_pergunta03.png'}],
- 'Dinossauros: espécies e mistérios da extinção': [{'pergunta': 'Há cerca de quantos milhões de anos ocorreu a '
-                                                                'extinção dos dinossauros não avianos?',
-                                                    'alternativas': ['66 milhões', '6 milhões', '660 mil'],
-                                                    'correta': 0,
-                                                    'imagem': 'tema04_pergunta01.png'},
-                                                   {'pergunta': 'Qual grupo atual descende de dinossauros terópodes?',
-                                                    'alternativas': ['Os anfíbios', 'As aves', 'Os insetos'],
-                                                    'correta': 1,
-                                                    'imagem': 'tema04_pergunta02.png'},
-                                                   {'pergunta': 'O que os paleontólogos estudam para conhecer '
-                                                                'dinossauros?',
-                                                    'alternativas': ['Manuscritos medievais', 'Satélites', 'Fósseis'],
-                                                    'correta': 2,
-                                                    'imagem': 'tema04_pergunta03.png'}],
- 'Egito Antigo: faraós, pirâmides e grandes construções': [{'pergunta': 'Qual rio foi essencial para a agricultura e o '
-                                                                        'transporte no Egito Antigo?',
-                                                            'alternativas': ['Tigre', 'Nilo', 'Danúbio'],
-                                                            'correta': 1,
-                                                            'imagem': 'tema05_pergunta01.png'},
-                                                           {'pergunta': 'Quem governava o Egito Antigo e também tinha '
-                                                                        'papel religioso?',
-                                                            'alternativas': ['O cavaleiro medieval',
-                                                                             'O cônsul romano',
-                                                                             'O faraó'],
-                                                            'correta': 2,
-                                                            'imagem': 'tema05_pergunta02.png'},
-                                                           {'pergunta': 'Para que serviam principalmente muitas '
-                                                                        'pirâmides egípcias?',
-                                                            'alternativas': ['Como tumbas reais',
-                                                                             'Como arenas esportivas',
-                                                                             'Como portos para navios'],
-                                                            'correta': 0,
-                                                            'imagem': 'tema05_pergunta03.png'}],
- 'Aviação: curiosidades sobre aviões e segurança de voo': [{'pergunta': 'Qual parte do avião produz grande parte da '
-                                                                        'sustentação durante o voo?',
-                                                            'alternativas': ['A cauda sozinha',
-                                                                             'O trem de pouso',
-                                                                             'As asas'],
-                                                            'correta': 2,
-                                                            'imagem': 'tema06_pergunta01.png'},
-                                                           {'pergunta': 'Que instrumento indica a altitude do avião?',
-                                                            'alternativas': ['Altímetro',
-                                                                             'Higrômetro',
-                                                                             'Bússola marítima'],
-                                                            'correta': 0,
-                                                            'imagem': 'tema06_pergunta02.png'},
-                                                           {'pergunta': 'Para que servem os gravadores conhecidos como '
-                                                                        'caixas-pretas?',
-                                                            'alternativas': ['Controlar a abertura das portas',
-                                                                             'Registrar dados do voo e áudio da cabine',
-                                                                             'Substituir o radar do aeroporto'],
-                                                            'correta': 1,
-                                                            'imagem': 'tema06_pergunta03.png'}],
- 'Múmias egípcias: rituais e crenças sobre a vida após a morte': [{'pergunta': 'Qual era um dos objetivos da '
-                                                                               'mumificação no Egito Antigo?',
-                                                                   'alternativas': ['Preservar o corpo para a vida '
-                                                                                    'após a morte',
-                                                                                    'Preparar o corpo para uma viagem '
-                                                                                    'marítima',
-                                                                                    'Evitar que a pessoa fosse '
-                                                                                    'lembrada'],
-                                                                   'correta': 0,
-                                                                   'imagem': 'tema07_pergunta01.png'},
-                                                                  {'pergunta': 'Como se chamavam os recipientes usados '
-                                                                               'para guardar alguns órgãos retirados?',
-                                                                   'alternativas': ['Ânforas de vinho',
-                                                                                    'Vasos canópicos',
-                                                                                    'Urnas eleitorais'],
-                                                                   'correta': 1,
-                                                                   'imagem': 'tema07_pergunta02.png'},
-                                                                  {'pergunta': 'Que material mineral ajudava a retirar '
-                                                                               'a umidade do corpo no processo de '
-                                                                               'mumificação?',
-                                                                   'alternativas': ['Cobre', 'Granito', 'Natrão'],
-                                                                   'correta': 2,
-                                                                   'imagem': 'tema07_pergunta03.png'}],
- 'Hieróglifos: como os antigos egípcios escreviam?': [{'pergunta': 'O que eram os hieróglifos no Egito Antigo?',
-                                                       'alternativas': ['Um calendário de plantio',
-                                                                        'Um sistema de escrita',
-                                                                        'Um tipo de embarcação'],
-                                                       'correta': 1,
-                                                       'imagem': 'tema08_pergunta01.png'},
-                                                      {'pergunta': 'Como era chamado o profissional que dominava a '
-                                                                   'escrita e registrava documentos?',
-                                                       'alternativas': ['Artesão de navios', 'Cartógrafo', 'Escriba'],
+QUIZZES = {'Mistérios do fundo do mar': [{'pergunta': 'A partir de aproximadamente qual profundidade a '
+                                            'luz solar deixa de ser suficiente para a '
+                                            'fotossíntese no oceano?',
+                                'alternativas': ['200 metros', '2 mil metros', '20 mil metros'],
+                                'correta': 0,
+                                'imagem': 'tema01_pergunta01.png'},
+                               {'pergunta': 'Como é chamada a zona oceânica que começa abaixo '
+                                            'de cerca de 6 mil metros?',
+                                'alternativas': ['Zona litoral', 'Zona hadal', 'Zona tropical'],
+                                'correta': 1,
+                                'imagem': 'tema01_pergunta02.png'},
+                               {'pergunta': 'O que aumenta muito sobre um submarino conforme '
+                                            'ele desce no oceano?',
+                                'alternativas': ['A luz do Sol',
+                                                 'A temperatura do ar',
+                                                 'A pressão da água'],
+                                'correta': 2,
+                                'imagem': 'tema01_pergunta03.png'}],
+ 'Animais que parecem inventados': [{'pergunta': 'Que sentido ajuda morcegos a se orientar '
+                                                 'usando sons e ecos?',
+                                     'alternativas': ['Fotossíntese',
+                                                      'Ecolocalização',
+                                                      'Magnetização'],
+                                     'correta': 1,
+                                     'imagem': 'tema02_pergunta01.png'},
+                                    {'pergunta': 'O que muitos polvos liberam na água quando '
+                                                 'precisam escapar de um predador?',
+                                     'alternativas': ['Areia', 'Espuma', 'Tinta'],
+                                     'correta': 2,
+                                     'imagem': 'tema02_pergunta02.png'},
+                                    {'pergunta': 'Qual destes mamíferos põe ovos?',
+                                     'alternativas': ['Ornitorrinco', 'Coala', 'Golfinho'],
+                                     'correta': 0,
+                                     'imagem': 'tema02_pergunta03.png'}],
+ 'Civilizações antigas que desapareceram': [{'pergunta': 'Em que região se desenvolveu a '
+                                                         'antiga civilização suméria?',
+                                             'alternativas': ['Escandinávia',
+                                                              'América Central',
+                                                              'Mesopotâmia'],
+                                             'correta': 2,
+                                             'imagem': 'tema03_pergunta01.png'},
+                                            {'pergunta': 'Qual sistema de escrita era usado na '
+                                                         'antiga Mesopotâmia?',
+                                             'alternativas': ['Cuneiforme',
+                                                              'Braile',
+                                                              'Alfabeto Morse'],
+                                             'correta': 0,
+                                             'imagem': 'tema03_pergunta02.png'},
+                                            {'pergunta': 'Qual civilização construiu cidades '
+                                                         'como Tikal, na América Central?',
+                                             'alternativas': ['Fenícia', 'Maya', 'Persa'],
+                                             'correta': 1,
+                                             'imagem': 'tema03_pergunta03.png'}],
+ 'O corpo humano e suas curiosidades': [{'pergunta': 'Quantos ossos tem, em média, o esqueleto '
+                                                     'de um adulto?',
+                                         'alternativas': ['206', '106', '306'],
+                                         'correta': 0,
+                                         'imagem': 'tema04_pergunta01.png'},
+                                        {'pergunta': 'Qual é o maior órgão do corpo humano?',
+                                         'alternativas': ['O coração', 'A pele', 'O pulmão'],
+                                         'correta': 1,
+                                         'imagem': 'tema04_pergunta02.png'},
+                                        {'pergunta': 'Qual proteína dos glóbulos vermelhos '
+                                                     'ajuda a transportar oxigênio?',
+                                         'alternativas': ['Queratina',
+                                                          'Insulina',
+                                                          'Hemoglobina'],
+                                         'correta': 2,
+                                         'imagem': 'tema04_pergunta03.png'}],
+ 'Planetas e luas com características extremas': [{'pergunta': 'Qual planeta tem um dia '
+                                                               'sideral mais longo que o '
+                                                               'próprio ano?',
+                                                   'alternativas': ['Marte',
+                                                                    'Vênus',
+                                                                    'Júpiter'],
+                                                   'correta': 1,
+                                                   'imagem': 'tema05_pergunta01.png'},
+                                                  {'pergunta': 'Titã, conhecida por seus lagos '
+                                                               'de hidrocarbonetos, é lua de '
+                                                               'qual planeta?',
+                                                   'alternativas': ['Terra',
+                                                                    'Netuno',
+                                                                    'Saturno'],
+                                                   'correta': 2,
+                                                   'imagem': 'tema05_pergunta02.png'},
+                                                  {'pergunta': 'Qual é o maior planeta do '
+                                                               'Sistema Solar?',
+                                                   'alternativas': ['Júpiter',
+                                                                    'Mercúrio',
+                                                                    'Marte'],
+                                                   'correta': 0,
+                                                   'imagem': 'tema05_pergunta03.png'}],
+ 'Invenções que surgiram por acidente': [{'pergunta': 'Que substância foi descoberta quando um '
+                                                      'pesquisador percebeu que um mofo '
+                                                      'impedia o crescimento de bactérias?',
+                                          'alternativas': ['Cafeína', 'Lactose', 'Penicilina'],
+                                          'correta': 2,
+                                          'imagem': 'tema06_pergunta01.png'},
+                                         {'pergunta': 'Qual produto surgiu a partir de uma '
+                                                      'cola que grudava pouco, embora seu '
+                                                      'criador buscasse um adesivo forte?',
+                                          'alternativas': ['Post-it',
+                                                           'Fita isolante',
+                                                           'Papel-alumínio'],
+                                          'correta': 0,
+                                          'imagem': 'tema06_pergunta02.png'},
+                                         {'pergunta': 'Que aparelho teve seu desenvolvimento '
+                                                      'impulsionado por pesquisas com ondas de '
+                                                      'radar?',
+                                          'alternativas': ['Telescópio',
+                                                           'Forno de micro-ondas',
+                                                           'Bússola'],
+                                          'correta': 1,
+                                          'imagem': 'tema06_pergunta03.png'}],
+ 'Lugares do mundo com fenômenos naturais únicos': [{'pergunta': 'As auroras polares acontecem '
+                                                                 'quando partículas do Sol '
+                                                                 'interagem principalmente com '
+                                                                 'o quê?',
+                                                     'alternativas': ['A atmosfera terrestre',
+                                                                      'O fundo dos oceanos',
+                                                                      'As placas tectônicas'],
+                                                     'correta': 0,
+                                                     'imagem': 'tema07_pergunta01.png'},
+                                                    {'pergunta': 'O que aquece a água '
+                                                                 'subterrânea que alimenta um '
+                                                                 'gêiser?',
+                                                     'alternativas': ['Luz da Lua',
+                                                                      'Calor geotérmico',
+                                                                      'Vento costeiro'],
+                                                     'correta': 1,
+                                                     'imagem': 'tema07_pergunta02.png'},
+                                                    {'pergunta': 'Qual força celeste tem papel '
+                                                                 'principal na formação das '
+                                                                 'marés da Terra?',
+                                                     'alternativas': ['Luz de Vênus',
+                                                                      'Calor de Marte',
+                                                                      'Gravidade da Lua'],
+                                                     'correta': 2,
+                                                     'imagem': 'tema07_pergunta03.png'}],
+ 'Mitos populares desmentidos pela ciência': [{'pergunta': 'Por que vemos o relâmpago antes de '
+                                                           'ouvir o trovão?',
+                                               'alternativas': ['O trovão começa depois da '
+                                                                'chuva',
+                                                                'A luz viaja mais rápido que o '
+                                                                'som',
+                                                                'O som não atravessa nuvens'],
+                                               'correta': 1,
+                                               'imagem': 'tema08_pergunta01.png'},
+                                              {'pergunta': 'O que explica principalmente a '
+                                                           'alternância das estações do ano?',
+                                               'alternativas': ['A distância diária entre '
+                                                                'Terra e Sol',
+                                                                'A mudança no tamanho do Sol',
+                                                                'A inclinação do eixo da '
+                                                                'Terra'],
+                                               'correta': 2,
+                                               'imagem': 'tema08_pergunta02.png'},
+                                              {'pergunta': 'De que cor é o sangue que circula '
+                                                           'nas veias dentro do corpo?',
+                                               'alternativas': ['Vermelha', 'Azul', 'Verde'],
+                                               'correta': 0,
+                                               'imagem': 'tema08_pergunta03.png'}],
+ 'A origem de objetos que usamos todos os dias': [{'pergunta': 'O grafite usado no lápis é '
+                                                               'feito principalmente de qual '
+                                                               'material?',
+                                                   'alternativas': ['Cálcio',
+                                                                    'Cobre',
+                                                                    'Carbono'],
+                                                   'correta': 2,
+                                                   'imagem': 'tema09_pergunta01.png'},
+                                                  {'pergunta': 'Qual é a função principal do '
+                                                               'código de barras em um '
+                                                               'produto?',
+                                                   'alternativas': ['Identificá-lo e registrar '
+                                                                    'informações',
+                                                                    'Conservar o alimento',
+                                                                    'Medir a temperatura'],
+                                                   'correta': 0,
+                                                   'imagem': 'tema09_pergunta02.png'},
+                                                  {'pergunta': 'Como o zíper mantém duas '
+                                                               'partes do tecido unidas?',
+                                                   'alternativas': ['Por ímãs que se repelem',
+                                                                    'Por dentes que se '
+                                                                    'encaixam',
+                                                                    'Por calor que derrete o '
+                                                                    'tecido'],
+                                                   'correta': 1,
+                                                   'imagem': 'tema09_pergunta03.png'}],
+ 'Como surgem os sonhos e as memórias': [{'pergunta': 'Qual estrutura cerebral participa da '
+                                                      'formação de novas memórias?',
+                                          'alternativas': ['Hipocampo', 'Tímpano', 'Pâncreas'],
+                                          'correta': 0,
+                                          'imagem': 'tema10_pergunta01.png'},
+                                         {'pergunta': 'Em qual fase do sono os sonhos vívidos '
+                                                      'são especialmente comuns?',
+                                          'alternativas': ['Sono leve inicial',
+                                                           'Sono REM',
+                                                           'Vigília'],
+                                          'correta': 1,
+                                          'imagem': 'tema10_pergunta02.png'},
+                                         {'pergunta': 'O que o sono ajuda o cérebro a fazer '
+                                                      'com o que aprendemos durante o dia?',
+                                          'alternativas': ['Apagar todos os aprendizados',
+                                                           'Parar a atividade cerebral',
+                                                           'Consolidar memórias'],
+                                          'correta': 2,
+                                          'imagem': 'tema10_pergunta03.png'}],
+ 'Construções antigas que ainda intrigam especialistas': [{'pergunta': 'Para que serviam '
+                                                                       'principalmente os '
+                                                                       'aquedutos construídos '
+                                                                       'pelos romanos?',
+                                                           'alternativas': ['Produzir moedas',
+                                                                            'Transportar água',
+                                                                            'Armazenar grãos '
+                                                                            'no alto'],
+                                                           'correta': 1,
+                                                           'imagem': 'tema11_pergunta01.png'},
+                                                          {'pergunta': 'Como um arco de pedra '
+                                                                       'ajuda a sustentar uma '
+                                                                       'construção?',
+                                                           'alternativas': ['Elimina a '
+                                                                            'gravidade',
+                                                                            'Torna as pedras '
+                                                                            'mais leves',
+                                                                            'Distribui forças '
+                                                                            'para os apoios'],
+                                                           'correta': 2,
+                                                           'imagem': 'tema11_pergunta02.png'},
+                                                          {'pergunta': 'Que material os '
+                                                                       'romanos misturavam à '
+                                                                       'cal para produzir um '
+                                                                       'concreto resistente?',
+                                                           'alternativas': ['Cinza vulcânica',
+                                                                            'Pó de carvão',
+                                                                            'Sal marinho'],
+                                                           'correta': 0,
+                                                           'imagem': 'tema11_pergunta03.png'}],
+ 'Comidas com histórias surpreendentes': [{'pergunta': 'De qual parte do cacaueiro vem a '
+                                                       'matéria-prima principal do chocolate?',
+                                           'alternativas': ['Das folhas',
+                                                            'Das raízes',
+                                                            'Das sementes do fruto'],
+                                           'correta': 2,
+                                           'imagem': 'tema12_pergunta01.png'},
+                                          {'pergunta': 'O queijo é produzido principalmente a '
+                                                       'partir da transformação de qual '
+                                                       'alimento?',
+                                           'alternativas': ['Leite', 'Arroz', 'Maçã'],
+                                           'correta': 0,
+                                           'imagem': 'tema12_pergunta02.png'},
+                                          {'pergunta': 'Qual é o objetivo principal da '
+                                                       'pasteurização de alimentos líquidos?',
+                                           'alternativas': ['Adicionar vitaminas artificiais',
+                                                            'Reduzir microrganismos nocivos',
+                                                            'Mudar a cor do alimento'],
+                                           'correta': 1,
+                                           'imagem': 'tema12_pergunta03.png'}],
+ 'Recordes impressionantes da natureza': [{'pergunta': 'Qual é o animal mais veloz em terra '
+                                                       'firme?',
+                                           'alternativas': ['Guepardo',
+                                                            'Elefante',
+                                                            'Tartaruga-gigante'],
+                                           'correta': 0,
+                                           'imagem': 'tema13_pergunta01.png'},
+                                          {'pergunta': 'Qual é o maior animal conhecido que '
+                                                       'vive atualmente?',
+                                           'alternativas': ['Girafa',
+                                                            'Baleia-azul',
+                                                            'Tubarão-branco'],
+                                           'correta': 1,
+                                           'imagem': 'tema13_pergunta02.png'},
+                                          {'pergunta': 'Qual grupo de árvores inclui algumas '
+                                                       'das espécies mais altas do planeta?',
+                                           'alternativas': ['Cajueiros',
+                                                            'Oliveiras',
+                                                            'Sequoias-costeiras'],
+                                           'correta': 2,
+                                           'imagem': 'tema13_pergunta03.png'}],
+ 'Como funcionam as ilusões de ótica': [{'pergunta': 'O que uma ilusão de ótica mostra sobre a '
+                                                     'percepção visual?',
+                                         'alternativas': ['Os olhos sempre medem tudo '
+                                                          'perfeitamente',
+                                                          'O cérebro interpreta as imagens',
+                                                          'As cores não dependem da luz'],
+                                         'correta': 1,
+                                         'imagem': 'tema14_pergunta01.png'},
+                                        {'pergunta': 'Na ilusão de Müller-Lyer, o que faz duas '
+                                                     'linhas iguais parecerem ter comprimentos '
+                                                     'diferentes?',
+                                         'alternativas': ['A cor do papel',
+                                                          'O som emitido pelas linhas',
+                                                          'As pontas ao redor das linhas'],
+                                         'correta': 2,
+                                         'imagem': 'tema14_pergunta02.png'},
+                                        {'pergunta': 'O que o cérebro faz com a pequena área '
+                                                     'sem visão no campo de cada olho?',
+                                         'alternativas': ['Completa informações ao redor',
+                                                          'Apaga a imagem inteira',
+                                                          'Transforma tudo em preto'],
+                                         'correta': 0,
+                                         'imagem': 'tema14_pergunta03.png'}],
+ 'Descobertas arqueológicas que mudaram a história': [{'pergunta': 'O método do carbono-14 é '
+                                                                   'usado para estimar a idade '
+                                                                   'de que tipo de material?',
+                                                       'alternativas': ['Rochas sem carbono',
+                                                                        'Objetos de plástico '
+                                                                        'modernos',
+                                                                        'Restos orgânicos'],
                                                        'correta': 2,
-                                                       'imagem': 'tema08_pergunta02.png'},
-                                                      {'pergunta': 'Qual achado ajudou estudiosos a decifrar os '
-                                                                   'hieróglifos?',
-                                                       'alternativas': ['A Pedra de Roseta',
-                                                                        'O Código de Hamurábi',
-                                                                        'A Coluna de Trajano'],
+                                                       'imagem': 'tema15_pergunta01.png'},
+                                                      {'pergunta': 'Em uma escavação, o que as '
+                                                                   'camadas do solo podem '
+                                                                   'ajudar a estudar?',
+                                                       'alternativas': ['A ordem relativa dos '
+                                                                        'vestígios',
+                                                                        'A cor original do céu',
+                                                                        'A velocidade dos '
+                                                                        'ventos antigos'],
                                                        'correta': 0,
-                                                       'imagem': 'tema08_pergunta03.png'}],
- 'Vida às margens do Nilo: costumes e trabalho no Egito Antigo': [{'pergunta': 'O que as cheias anuais do Nilo '
-                                                                               'deixavam nas terras próximas ao rio?',
-                                                                   'alternativas': ['Neve para armazenar água',
-                                                                                    'Camadas de sal que impediam a '
-                                                                                    'plantação',
-                                                                                    'Lodo fértil para o cultivo'],
-                                                                   'correta': 2,
-                                                                   'imagem': 'tema09_pergunta01.png'},
-                                                                  {'pergunta': 'Qual planta do Nilo era usada para '
-                                                                               'produzir um material de escrita?',
-                                                                   'alternativas': ['Papiro', 'Algodão', 'Centeio'],
-                                                                   'correta': 0,
-                                                                   'imagem': 'tema09_pergunta02.png'},
-                                                                  {'pergunta': 'Como os egípcios antigos aproveitavam '
-                                                                               'o Nilo no cotidiano?',
-                                                                   'alternativas': ['Para obter petróleo',
-                                                                                    'Para transporte, pesca e '
-                                                                                    'irrigação',
-                                                                                    'Para construir estradas '
-                                                                                    'subterrâneas'],
-                                                                   'correta': 1,
-                                                                   'imagem': 'tema09_pergunta03.png'}]}
+                                                       'imagem': 'tema15_pergunta02.png'},
+                                                      {'pergunta': 'O que a dendrocronologia '
+                                                                   'analisa para ajudar a '
+                                                                   'datar madeira antiga?',
+                                                       'alternativas': ['Penas de aves',
+                                                                        'Anéis de crescimento '
+                                                                        'das árvores',
+                                                                        'Bolhas em vidro'],
+                                                       'correta': 1,
+                                                       'imagem': 'tema15_pergunta03.png'}]}
 
-LEGENDAS = {'Eleições 2026: como funciona o segundo turno?': 'Entenda o sistema eleitoral sem tomar partido. 🗳️ Teste seus '
-                                                  'conhecimentos e compartilhe sua pontuação.\n'
-                                                  '\n'
-                                                  '#Quiz #Eleicoes2026 #Cidadania #SegundoTurno #Conhecimento',
- 'Redes sociais e eleições: alcance e desinformação': 'Como circulam as informações nas redes durante as eleições? 📱 '
-                                                      'Responda e confira seu olhar crítico.\n'
-                                                      '\n'
-                                                      '#Quiz #RedesSociais #Eleicoes #Desinformacao #Midia',
- 'Pré-história: como viviam os primeiros seres humanos?': 'Uma viagem aos primeiros modos de vida humanos. 🪨 Quantas '
-                                                          'você acerta?\n'
-                                                          '\n'
-                                                          '#Quiz #PreHistoria #Historia #Curiosidades #Conhecimento',
- 'Dinossauros: espécies e mistérios da extinção': 'Teste o que você sabe sobre os dinossauros. 🦕 Conte quantas '
-                                                  'respostas acertou!\n'
-                                                  '\n'
-                                                  '#Quiz #Dinossauros #Paleontologia #Ciencia #Curiosidades',
- 'Egito Antigo: faraós, pirâmides e grandes construções': 'Explore as grandes construções e a história do Egito '
-                                                          'Antigo. 🏺\n'
-                                                          '\n'
-                                                          '#Quiz #EgitoAntigo #Historia #Faraos #Piramides',
- 'Aviação: curiosidades sobre aviões e segurança de voo': 'Prepare-se para um desafio nas alturas! ✈️ Teste seus '
-                                                          'conhecimentos sobre aviação.\n'
-                                                          '\n'
-                                                          '#Quiz #Aviacao #Avioes #Curiosidades #Seguranca',
- 'Múmias egípcias: rituais e crenças sobre a vida após a morte': 'Conheça as práticas e crenças ligadas às múmias '
-                                                                 'egípcias. ⚱️\n'
-                                                                 '\n'
-                                                                 '#Quiz #EgitoAntigo #Mumias #Historia #Curiosidades',
- 'Hieróglifos: como os antigos egípcios escreviam?': 'Descubra detalhes sobre a escrita no Egito Antigo. ✍️ Quantas '
-                                                     'você acerta?\n'
-                                                     '\n'
-                                                     '#Quiz #Hieroglifos #EgitoAntigo #Escrita #Historia',
- 'Vida às margens do Nilo: costumes e trabalho no Egito Antigo': 'Como o Nilo moldava o cotidiano no Egito Antigo? 🌾\n'
-                                                                 '\n'
-                                                                 '#Quiz #RioNilo #EgitoAntigo #Historia #Antiguidade'}
-
+LEGENDAS = {'Mistérios do fundo do mar': 'Desvende curiosidades das regiões mais profundas do oceano. 🌊 '
+                              '#Oceano #Curiosidades #Quiz',
+ 'Animais que parecem inventados': 'O reino animal tem habilidades surpreendentes. 🐾 #Animais '
+                                   '#Natureza #Quiz',
+ 'Civilizações antigas que desapareceram': 'Conheça povos que deixaram marcas na história. 🏺 '
+                                           '#História #Antiguidade #Quiz',
+ 'O corpo humano e suas curiosidades': 'Teste o que você sabe sobre o corpo. 🧠 #CorpoHumano '
+                                       '#Ciência #Quiz',
+ 'Planetas e luas com características extremas': 'Explore mundos curiosos do Sistema Solar. 🪐 '
+                                                 '#Espaço #Astronomia #Quiz',
+ 'Invenções que surgiram por acidente': 'Algumas descobertas nasceram de tentativas '
+                                        'inesperadas. 💡 #Invenções #História #Quiz',
+ 'Lugares do mundo com fenômenos naturais únicos': 'A Terra guarda cenários e fenômenos '
+                                                   'surpreendentes. 🌍 #Geografia #Natureza '
+                                                   '#Quiz',
+ 'Mitos populares desmentidos pela ciência': 'Será que isso é verdade mesmo? Vamos testar. 🔬 '
+                                             '#Ciência #Mitos #Quiz',
+ 'A origem de objetos que usamos todos os dias': 'Olhe de novo para os objetos do cotidiano. 🔎 '
+                                                 '#Curiosidades #Tecnologia #Quiz',
+ 'Como surgem os sonhos e as memórias': 'Entenda melhor o que acontece durante o sono. 🌙 '
+                                        '#Cérebro #Sono #Quiz',
+ 'Construções antigas que ainda intrigam especialistas': 'Engenharia antiga também guarda '
+                                                         'grandes ideias. 🏛️ #História '
+                                                         '#Engenharia #Quiz',
+ 'Comidas com histórias surpreendentes': 'Há ciência e história em cada receita. 🍲 #Comida '
+                                         '#Curiosidades #Quiz',
+ 'Recordes impressionantes da natureza': 'A natureza supera muitos números humanos. 🐋 '
+                                         '#Natureza #Animais #Quiz',
+ 'Como funcionam as ilusões de ótica': 'Seus olhos veem; seu cérebro interpreta. 👁️ #Visão '
+                                       '#Ciência #Quiz',
+ 'Descobertas arqueológicas que mudaram a história': 'Cada vestígio pode revelar um passado '
+                                                     'inteiro. 🧭 #Arqueologia #História #Quiz'}
