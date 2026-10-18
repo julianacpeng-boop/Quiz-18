@@ -94,9 +94,7 @@ QUIZZES = {'Inteligência artificial e deepfakes': [{'pergunta': 'O que é um de
                                              'alternativas': ['Tempo é medido por décadas e clima por '
                                                               'minutos',
                                                               'São exatamente a mesma coisa',
-                                                              'Clima descreve padrões observados por '
-                                                              'períodos longos; tempo é a condição de curto '
-                                                              'prazo'],
+                                                              'Clima mostra padrões de longo prazo; tempo descreve o momento'],
                                              'correta': 2,
                                              'imagem': 'tema06_pergunta01.png'},
                                             {'pergunta': 'O que significa adaptação às mudanças climáticas?',
