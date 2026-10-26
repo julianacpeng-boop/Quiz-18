@@ -271,67 +271,37 @@ QUIZZES = {'Memória e aprendizagem': [{'pergunta': 'Qual prática tende a ajuda
                           'correta': 1,
                           'imagem': 'q18_20261026_t15_p03.png'}]}
 
-LEGENDAS = {'Memória e aprendizagem': 'CAPA_SEGUNDOS=2\n'
-                           '\n'
-                           'Memória e estudo: teste seus conhecimentos sobre como aprendemos!\n'
+LEGENDAS = {'Memória e aprendizagem': 'Memória e estudo: teste seus conhecimentos sobre como aprendemos!\n'
                            '#Memoria #Aprendizagem #Estudo #Educacao',
- 'Sono e relógio biológico': 'CAPA_SEGUNDOS=2\n'
-                             '\n'
-                             'Sono também é ciência. Quantas destas três perguntas você acerta?\n'
+ 'Sono e relógio biológico': 'Sono também é ciência. Quantas destas três perguntas você acerta?\n'
                              '#Sono #RitmoCircadiano #Cerebro #Ciencia',
- 'Ilusões de óptica': 'CAPA_SEGUNDOS=2\n'
-                      '\n'
-                      'Olhar nem sempre é perceber exatamente. Teste o que sabe sobre ilusões de '
+ 'Ilusões de óptica': 'Olhar nem sempre é perceber exatamente. Teste o que sabe sobre ilusões de '
                       'óptica!\n'
                       '#IlusoesDeOptica #PercepcaoVisual #Cerebro #Ciencia',
- 'Som e instrumentos musicais': 'CAPA_SEGUNDOS=2\n'
-                                '\n'
-                                'Grave, agudo e vibração: três perguntas sobre a ciência do som.\n'
+ 'Som e instrumentos musicais': 'Grave, agudo e vibração: três perguntas sobre a ciência do som.\n'
                                 '#Som #Musica #Fisica #InstrumentosMusicais',
- 'Pontes e estruturas': 'CAPA_SEGUNDOS=2\n'
-                        '\n'
-                        'Como as pontes permanecem de pé? Teste seus conhecimentos sobre estruturas.\n'
+ 'Pontes e estruturas': 'Como as pontes permanecem de pé? Teste seus conhecimentos sobre estruturas.\n'
                         '#Pontes #Engenharia #Estruturas #Fisica',
- 'Vulcões e placas tectônicas': 'CAPA_SEGUNDOS=2\n'
-                                '\n'
-                                'A Terra está em transformação: três perguntas sobre vulcões e '
+ 'Vulcões e placas tectônicas': 'A Terra está em transformação: três perguntas sobre vulcões e '
                                 'tectônica.\n'
                                 '#Vulcoes #PlacasTectonicas #Geologia #Ciencia',
- 'Fósseis e extinções': 'CAPA_SEGUNDOS=2\n'
-                        '\n'
-                        'Pistas guardadas nas rochas: teste o que sabe sobre fósseis e extinções.\n'
+ 'Fósseis e extinções': 'Pistas guardadas nas rochas: teste o que sabe sobre fósseis e extinções.\n'
                         '#Fosseis #Paleontologia #Extincao #HistoriaDaTerra',
- 'Animais polinizadores': 'CAPA_SEGUNDOS=2\n'
-                          '\n'
-                          'Abelhas não trabalham sozinhas! Conheça melhor os animais polinizadores.\n'
+ 'Animais polinizadores': 'Abelhas não trabalham sozinhas! Conheça melhor os animais polinizadores.\n'
                           '#Polinizadores #Biodiversidade #Plantas #Natureza',
- 'Fungos e decomposição': 'CAPA_SEGUNDOS=2\n'
-                          '\n'
-                          'Muito além dos cogumelos: três perguntas sobre fungos e decomposição.\n'
+ 'Fungos e decomposição': 'Muito além dos cogumelos: três perguntas sobre fungos e decomposição.\n'
                           '#Fungos #Decomposicao #Biologia #Natureza',
- 'Adaptações das plantas': 'CAPA_SEGUNDOS=2\n'
-                           '\n'
-                           'Do cacto às folhas: teste o que sabe sobre as adaptações das plantas.\n'
+ 'Adaptações das plantas': 'Do cacto às folhas: teste o que sabe sobre as adaptações das plantas.\n'
                            '#AdaptacoesDasPlantas #Botanica #Biologia #Natureza',
- 'Ciência na cozinha': 'CAPA_SEGUNDOS=2\n'
-                       '\n'
-                       'A cozinha é um laboratório do cotidiano. Quantas você acerta?\n'
+ 'Ciência na cozinha': 'A cozinha é um laboratório do cotidiano. Quantas você acerta?\n'
                        '#CienciaNaCozinha #Quimica #Transformacoes #Educacao',
- 'Conservação dos alimentos': 'CAPA_SEGUNDOS=2\n'
-                              '\n'
-                              'Frio, secagem e cuidados: três perguntas sobre conservação dos '
+ 'Conservação dos alimentos': 'Frio, secagem e cuidados: três perguntas sobre conservação dos '
                               'alimentos.\n'
                               '#ConservacaoDeAlimentos #Alimentos #Ciencia #Educacao',
- 'Mapas e orientação': 'CAPA_SEGUNDOS=2\n'
-                       '\n'
-                       'Você se orienta bem? Teste seus conhecimentos sobre mapas e coordenadas.\n'
+ 'Mapas e orientação': 'Você se orienta bem? Teste seus conhecimentos sobre mapas e coordenadas.\n'
                        '#Mapas #Cartografia #Orientacao #Geografia',
- 'Probabilidade no cotidiano': 'CAPA_SEGUNDOS=2\n'
-                               '\n'
-                               'Moedas, dados e sorteios: três desafios de probabilidade.\n'
+ 'Probabilidade no cotidiano': 'Moedas, dados e sorteios: três desafios de probabilidade.\n'
                                '#Probabilidade #Matematica #Raciocinio #Educacao',
- 'Origem das palavras': 'CAPA_SEGUNDOS=2\n'
-                        '\n'
-                        'As palavras também têm história. Teste seus conhecimentos sobre a língua '
+ 'Origem das palavras': 'As palavras também têm história. Teste seus conhecimentos sobre a língua '
                         'portuguesa.\n'
                         '#Etimologia #LinguaPortuguesa #Palavras #Educacao'}
