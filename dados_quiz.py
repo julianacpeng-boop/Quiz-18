@@ -1,428 +1,337 @@
-QUIZZES = {   'Português: crase e regência verbal': [   {   'pergunta': 'Em qual frase o uso da crase está correto?',
-                                                  'alternativas': [   'Viajei à pé para casa.',
-                                                                      'Comecei à estudar cedo.',
-                                                                      'Entreguei o caderno à professora.'],
-                                                  'correta': 2,
-                                                  'imagem': 'tema46_pergunta01.png'},
-                                              {   'pergunta': 'O verbo “assistir”, no sentido de ver um '
-                                                              'filme, pede qual preposição na norma-padrão?',
-                                                  'alternativas': ['de', 'por', 'a'],
-                                                  'correta': 2,
-                                                  'imagem': 'tema46_pergunta02.png'},
-                                              {   'pergunta': 'Qual frase completa corretamente: “Chegamos '
-                                                              '___ escola antes do sinal”?',
-                                                  'alternativas': ['à', 'a', 'há'],
-                                                  'correta': 0,
-                                                  'imagem': 'tema46_pergunta03.png'}],
-    'Matemática: equações de 1º grau': [   {   'pergunta': 'Em uma equação, o que significa encontrar o '
-                                                           'valor da incógnita?',
-                                               'alternativas': [   'Somar todos os números dos dois lados.',
-                                                                   'Descobrir o número que torna a igualdade '
-                                                                   'verdadeira.',
-                                                                   'Apagar o sinal de igualdade.'],
-                                               'correta': 1,
-                                               'imagem': 'tema47_pergunta01.png'},
-                                           {   'pergunta': 'Se x + 5 = 12, qual operação desfaz a adição de '
-                                                           '5 para isolar x?',
-                                               'alternativas': [   'Multiplicar por 5.',
-                                                                   'Somar 12 aos dois lados.',
-                                                                   'Subtrair 5 dos dois lados.'],
-                                               'correta': 2,
-                                               'imagem': 'tema47_pergunta02.png'},
-                                           {   'pergunta': 'Qual destes exemplos é uma equação de primeiro '
-                                                           'grau?',
-                                               'alternativas': ['x² + 2 = 6', '5 + 7 = 12', '3x + 4 = 13'],
-                                               'correta': 2,
-                                               'imagem': 'tema47_pergunta03.png'}],
-    'Biologia: mitose e meiose': [   {   'pergunta': 'Qual processo celular é mais associado ao crescimento '
-                                                     'e à renovação de tecidos?',
-                                         'alternativas': ['Mitose.', 'Meiose.', 'Fotossíntese.'],
-                                         'correta': 0,
-                                         'imagem': 'tema48_pergunta01.png'},
-                                     {   'pergunta': 'Em que tipo de célula a meiose ocorre para formar '
-                                                     'células reprodutivas?',
-                                         'alternativas': [   'Células germinativas.',
-                                                             'Células musculares.',
-                                                             'Células da pele.'],
-                                         'correta': 0,
-                                         'imagem': 'tema48_pergunta02.png'},
-                                     {   'pergunta': 'Ao final da mitose, quantas células-filhas normalmente '
-                                                     'se formam a partir de uma célula?',
-                                         'alternativas': ['Quatro.', 'Três.', 'Duas.'],
-                                         'correta': 2,
-                                         'imagem': 'tema48_pergunta03.png'}],
-    'Química: ligações químicas e moléculas': [   {   'pergunta': 'O que uma ligação química ajuda a manter '
-                                                                  'unido?',
-                                                      'alternativas': [   'Planetas em uma órbita.',
-                                                                          'Átomos em uma substância.',
-                                                                          'Células em um tecido.'],
-                                                      'correta': 1,
-                                                      'imagem': 'tema49_pergunta01.png'},
-                                                  {   'pergunta': 'Na ligação iônica, o que acontece com '
-                                                                  'elétrons entre os átomos?',
-                                                      'alternativas': [   'São transferidos de um átomo para '
-                                                                          'outro.',
-                                                                          'Desaparecem dos átomos.',
-                                                                          'Transformam-se em prótons.'],
-                                                      'correta': 0,
-                                                      'imagem': 'tema49_pergunta02.png'},
-                                                  {   'pergunta': 'Qual tipo de ligação costuma ocorrer '
-                                                                  'quando átomos compartilham pares de '
-                                                                  'elétrons?',
-                                                      'alternativas': ['Iônica.', 'Covalente.', 'Metálica.'],
-                                                      'correta': 1,
-                                                      'imagem': 'tema49_pergunta03.png'}],
-    'Física: óptica, reflexão e refração': [   {   'pergunta': 'Como se chama o retorno da luz ao atingir '
-                                                               'uma superfície, como um espelho?',
-                                                   'alternativas': ['Refração.', 'Reflexão.', 'Condução.'],
-                                                   'correta': 1,
-                                                   'imagem': 'tema50_pergunta01.png'},
-                                               {   'pergunta': 'O que ocorre com a luz quando ela muda de '
-                                                               'direção ao passar do ar para a água?',
-                                                   'alternativas': ['Refração.', 'Combustão.', 'Evaporação.'],
-                                                   'correta': 0,
-                                                   'imagem': 'tema50_pergunta02.png'},
-                                               {   'pergunta': 'Qual objeto óptico é usado para corrigir a '
-                                                               'visão em muitos óculos?',
-                                                   'alternativas': ['Lente.', 'Bússola.', 'Termômetro.'],
-                                                   'correta': 0,
-                                                   'imagem': 'tema50_pergunta03.png'}],
-    'História: República Velha e Era Vargas': [   {   'pergunta': 'Qual produto teve grande importância na '
-                                                                  'economia brasileira durante a República '
-                                                                  'Velha?',
-                                                      'alternativas': [   'Petróleo refinado.',
-                                                                          'Café.',
-                                                                          'Microchips.'],
-                                                      'correta': 1,
-                                                      'imagem': 'tema51_pergunta01.png'},
-                                                  {   'pergunta': 'Como ficou conhecido o período em que '
-                                                                  'Getúlio Vargas governou o Brasil a partir '
-                                                                  'de 1930?',
-                                                      'alternativas': [   'República da Espada.',
-                                                                          'Período Regencial.',
-                                                                          'Era Vargas.'],
-                                                      'correta': 2,
-                                                      'imagem': 'tema51_pergunta02.png'},
-                                                  {   'pergunta': 'Uma importante mudança trabalhista '
-                                                                  'associada ao governo Vargas foi a criação '
-                                                                  'de qual conjunto de normas?',
-                                                      'alternativas': [   'Lei Áurea.',
-                                                                          'Constituição de 1824.',
-                                                                          'CLT.'],
-                                                      'correta': 2,
-                                                      'imagem': 'tema51_pergunta03.png'}],
-    'Geografia: cartografia, coordenadas e fusos horários': [   {   'pergunta': 'Em um mapa, para que serve '
-                                                                                'a escala?',
-                                                                    'alternativas': [   'Indicar a população '
-                                                                                        'de cada cidade.',
-                                                                                        'Relacionar a '
-                                                                                        'distância no mapa à '
-                                                                                        'distância real.',
-                                                                                        'Mostrar a altitude '
-                                                                                        'do oceano.'],
-                                                                    'correta': 1,
-                                                                    'imagem': 'tema52_pergunta01.png'},
-                                                                {   'pergunta': 'Quais linhas imaginárias '
-                                                                                'ajudam a localizar um ponto '
-                                                                                'por latitude e longitude?',
-                                                                    'alternativas': [   'Rios e fronteiras.',
-                                                                                        'Paralelos e '
-                                                                                        'meridianos.',
-                                                                                        'Rodovias e '
-                                                                                        'ferrovias.'],
-                                                                    'correta': 1,
-                                                                    'imagem': 'tema52_pergunta02.png'},
-                                                                {   'pergunta': 'Por que existem fusos '
-                                                                                'horários diferentes no '
-                                                                                'planeta?',
-                                                                    'alternativas': [   'Os países escolhem '
-                                                                                        'a hora pela '
-                                                                                        'quantidade de '
-                                                                                        'habitantes.',
-                                                                                        'A Terra gira e '
-                                                                                        'diferentes regiões '
-                                                                                        'recebem luz solar '
-                                                                                        'em horários '
-                                                                                        'distintos.',
-                                                                                        'A Lua muda a '
-                                                                                        'duração de cada dia '
-                                                                                        'em cada cidade.'],
-                                                                    'correta': 1,
-                                                                    'imagem': 'tema52_pergunta03.png'}],
-    'Ciências: fontes de energia renováveis e não renováveis': [   {   'pergunta': 'Qual destas fontes é '
-                                                                                   'renovável?',
-                                                                       'alternativas': [   'Energia do '
-                                                                                           'vento.',
-                                                                                           'Carvão mineral.',
-                                                                                           'Petróleo.'],
-                                                                       'correta': 0,
-                                                                       'imagem': 'tema53_pergunta01.png'},
-                                                                   {   'pergunta': 'Qual fonte gera '
-                                                                                   'eletricidade a partir da '
-                                                                                   'luz do Sol?',
-                                                                       'alternativas': [   'Nuclear.',
-                                                                                           'Geotérmica.',
-                                                                                           'Solar.'],
-                                                                       'correta': 2,
-                                                                       'imagem': 'tema53_pergunta02.png'},
-                                                                   {   'pergunta': 'Por que o petróleo é '
-                                                                                   'considerado uma fonte '
-                                                                                   'não renovável?',
-                                                                       'alternativas': [   'É produzido '
-                                                                                           'continuamente '
-                                                                                           'pelas árvores.',
-                                                                                           'Só pode ser '
-                                                                                           'usado durante o '
-                                                                                           'dia.',
-                                                                                           'Leva muito tempo '
-                                                                                           'para se formar e '
-                                                                                           'pode se '
-                                                                                           'esgotar.'],
-                                                                       'correta': 2,
-                                                                       'imagem': 'tema53_pergunta03.png'}],
-    'Literatura: narrador, enredo e personagens': [   {   'pergunta': 'Quem conta os acontecimentos de uma '
-                                                                      'narrativa?',
-                                                          'alternativas': [   'O cenário.',
-                                                                              'O narrador.',
-                                                                              'O título.'],
-                                                          'correta': 1,
-                                                          'imagem': 'tema54_pergunta01.png'},
-                                                      {   'pergunta': 'Como se chama a sequência de '
-                                                                      'acontecimentos de uma história?',
-                                                          'alternativas': ['Rima.', 'Enredo.', 'Legenda.'],
-                                                          'correta': 1,
-                                                          'imagem': 'tema54_pergunta02.png'},
-                                                      {   'pergunta': 'Em uma narrativa, quem participa das '
-                                                                      'ações e dos acontecimentos?',
-                                                          'alternativas': [   'As estrofes.',
-                                                                              'As personagens.',
-                                                                              'As sílabas.'],
-                                                          'correta': 1,
-                                                          'imagem': 'tema54_pergunta03.png'}],
-    'Inglês: preposições de lugar e tempo': [   {   'pergunta': 'Qual preposição completa: “The book is ___ '
-                                                                'the table” (o livro está sobre a mesa)?',
-                                                    'alternativas': ['between', 'at', 'on'],
-                                                    'correta': 2,
-                                                    'imagem': 'tema55_pergunta01.png'},
-                                                {   'pergunta': 'Qual preposição é mais usada com horários '
-                                                                'específicos, como “___ 7 o’clock”?',
-                                                    'alternativas': ['in', 'at', 'under'],
-                                                    'correta': 1,
-                                                    'imagem': 'tema55_pergunta02.png'},
-                                                {   'pergunta': 'Na frase “The cat is under the chair”, qual '
-                                                                'é o sentido de “under”?',
-                                                    'alternativas': [   'Debaixo de.',
-                                                                        'Ao lado de.',
-                                                                        'Dentro de.'],
-                                                    'correta': 0,
-                                                    'imagem': 'tema55_pergunta03.png'}],
-    'Artes: fotografia e composição visual': [   {   'pergunta': 'Na fotografia, o que é enquadramento?',
-                                                     'alternativas': [   'A escolha do que aparece dentro '
-                                                                         'dos limites da imagem.',
-                                                                         'A quantidade de cores usadas na '
-                                                                         'impressão.',
-                                                                         'O tipo de moldura colocado depois '
-                                                                         'da foto.'],
-                                                     'correta': 0,
-                                                     'imagem': 'tema56_pergunta01.png'},
-                                                 {   'pergunta': 'Que recurso ajuda a conduzir o olhar do '
-                                                                 'observador para um ponto da fotografia?',
-                                                     'alternativas': [   'Linhas e organização dos '
-                                                                         'elementos.',
-                                                                         'Aumentar o peso da câmera.',
-                                                                         'Cobrir a lente com papel.'],
-                                                     'correta': 0,
-                                                     'imagem': 'tema56_pergunta02.png'},
-                                                 {   'pergunta': 'O que é ponto de vista em uma fotografia?',
-                                                     'alternativas': [   'O tamanho do arquivo salvo.',
-                                                                         'A marca gravada no cartão de '
-                                                                         'memória.',
-                                                                         'A posição de onde a cena é '
-                                                                         'observada e fotografada.'],
-                                                     'correta': 2,
-                                                     'imagem': 'tema56_pergunta03.png'}],
-    'Educação Física: hidratação e exercício físico': [   {   'pergunta': 'Por que é importante beber água '
-                                                                          'durante atividades físicas?',
-                                                              'alternativas': [   'Para repor líquidos '
-                                                                                  'perdidos pelo corpo.',
-                                                                                  'Para substituir todas as '
-                                                                                  'refeições.',
-                                                                                  'Para impedir que os '
-                                                                                  'músculos se movimentem.'],
-                                                              'correta': 0,
-                                                              'imagem': 'tema57_pergunta01.png'},
-                                                          {   'pergunta': 'Qual sinal pode indicar que a '
-                                                                          'pessoa precisa interromper o '
-                                                                          'exercício e buscar ajuda?',
-                                                              'alternativas': [   'Suor leve em um dia '
-                                                                                  'quente.',
-                                                                                  'Respiração um pouco mais '
-                                                                                  'rápida durante a corrida.',
-                                                                                  'Tontura intensa ou '
-                                                                                  'mal-estar.'],
-                                                              'correta': 2,
-                                                              'imagem': 'tema57_pergunta02.png'},
-                                                          {   'pergunta': 'Qual atitude ajuda a praticar '
-                                                                          'atividade física com mais '
-                                                                          'segurança?',
-                                                              'alternativas': [   'Aumentar o esforço aos '
-                                                                                  'poucos e respeitar os '
-                                                                                  'limites do corpo.',
-                                                                                  'Começar sempre com o '
-                                                                                  'exercício mais intenso.',
-                                                                                  'Ignorar dor forte para '
-                                                                                  'terminar a série.'],
-                                                              'correta': 0,
-                                                              'imagem': 'tema57_pergunta03.png'}],
-    'Filosofia: Sócrates, Platão e Aristóteles': [   {   'pergunta': 'Qual filósofo ficou conhecido pelo '
-                                                                     'método de fazer perguntas para '
-                                                                     'estimular o pensamento?',
-                                                         'alternativas': [   'Pitágoras.',
-                                                                             'Aristóteles.',
-                                                                             'Sócrates.'],
-                                                         'correta': 2,
-                                                         'imagem': 'tema58_pergunta01.png'},
-                                                     {   'pergunta': 'Qual filósofo foi aluno de Sócrates e '
-                                                                     'fundou a Academia em Atenas?',
-                                                         'alternativas': [   'Platão.',
-                                                                             'Heráclito.',
-                                                                             'Epicuro.'],
-                                                         'correta': 0,
-                                                         'imagem': 'tema58_pergunta02.png'},
-                                                     {   'pergunta': 'Qual pensador grego foi aluno de '
-                                                                     'Platão e estudou áreas como lógica e '
-                                                                     'natureza?',
-                                                         'alternativas': [   'Sócrates.',
-                                                                             'Aristóteles.',
-                                                                             'Tales de Mileto.'],
-                                                         'correta': 1,
-                                                         'imagem': 'tema58_pergunta03.png'}],
-    'Sociologia: redes sociais e opinião pública': [   {   'pergunta': 'O que é opinião pública?',
-                                                           'alternativas': [   'Conjunto de ideias e '
-                                                                               'avaliações compartilhadas '
-                                                                               'por pessoas sobre assuntos '
-                                                                               'coletivos.',
-                                                                               'Uma mensagem privada enviada '
-                                                                               'a uma pessoa.',
-                                                                               'Uma regra escrita apenas '
-                                                                               'para jogos.'],
-                                                           'correta': 0,
-                                                           'imagem': 'tema59_pergunta01.png'},
-                                                       {   'pergunta': 'Como as redes sociais podem '
-                                                                       'influenciar a circulação de '
-                                                                       'informações?',
-                                                           'alternativas': [   'Compartilhando conteúdos '
-                                                                               'rapidamente entre muitas '
-                                                                               'pessoas.',
-                                                                               'Impedindo qualquer conversa '
-                                                                               'entre usuários.',
-                                                                               'Substituindo automaticamente '
-                                                                               'toda fonte de notícia.'],
-                                                           'correta': 0,
-                                                           'imagem': 'tema59_pergunta02.png'},
-                                                       {   'pergunta': 'Antes de compartilhar uma notícia '
-                                                                       'nas redes, qual atitude é mais '
-                                                                       'responsável?',
-                                                           'alternativas': [   'Repassar imediatamente se '
-                                                                               'tiver muitas curtidas.',
-                                                                               'Verificar a origem e '
-                                                                               'comparar com fontes '
-                                                                               'confiáveis.',
-                                                                               'Alterar o título para chamar '
-                                                                               'atenção.'],
-                                                           'correta': 1,
-                                                           'imagem': 'tema59_pergunta03.png'}],
-    'Informática: sistemas operacionais e armazenamento em nuvem': [   {   'pergunta': 'Qual é uma função '
-                                                                                       'principal de um '
-                                                                                       'sistema operacional?',
-                                                                           'alternativas': [   'Criar '
-                                                                                               'energia para '
-                                                                                               'manter a '
-                                                                                               'bateria '
-                                                                                               'carregada.',
-                                                                                               'Imprimir '
-                                                                                               'documentos '
-                                                                                               'sem precisar '
-                                                                                               'de '
-                                                                                               'impressora.',
-                                                                                               'Gerenciar o '
-                                                                                               'funcionamento '
-                                                                                               'do '
-                                                                                               'computador e '
-                                                                                               'dos '
-                                                                                               'aplicativos.'],
-                                                                           'correta': 2,
-                                                                           'imagem': 'tema60_pergunta01.png'},
-                                                                       {   'pergunta': 'O que significa '
-                                                                                       'armazenar um arquivo '
-                                                                                       'na nuvem?',
-                                                                           'alternativas': [   'Salvar o '
-                                                                                               'arquivo '
-                                                                                               'somente na '
-                                                                                               'memória da '
-                                                                                               'tela.',
-                                                                                               'Guardar o '
-                                                                                               'arquivo em '
-                                                                                               'servidores '
-                                                                                               'acessíveis '
-                                                                                               'pela '
-                                                                                               'internet.',
-                                                                                               'Transformar '
-                                                                                               'o arquivo em '
-                                                                                               'um objeto '
-                                                                                               'físico.'],
-                                                                           'correta': 1,
-                                                                           'imagem': 'tema60_pergunta02.png'},
-                                                                       {   'pergunta': 'Qual prática ajuda a '
-                                                                                       'proteger arquivos '
-                                                                                       'importantes contra '
-                                                                                       'perda?',
-                                                                           'alternativas': [   'Usar a mesma '
-                                                                                               'senha em '
-                                                                                               'todos os '
-                                                                                               'serviços.',
-                                                                                               'Apagar todas '
-                                                                                               'as versões '
-                                                                                               'anteriores.',
-                                                                                               'Manter uma '
-                                                                                               'cópia de '
-                                                                                               'segurança em '
-                                                                                               'outro '
-                                                                                               'local.'],
-                                                                           'correta': 2,
-                                                                           'imagem': 'tema60_pergunta03.png'}]}
+# Juh Quiz — Quiz-18: 15 temas educativos, 45 perguntas e caricaturas sem fundo.
 
-LEGENDAS = {   'Português: crase e regência verbal': 'Teste seus conhecimentos sobre crase e regência! 🧠 #JuhQuiz '
-                                          '#QuizDePortuguês #Gramática #Conhecimento',
-    'Matemática: equações de 1º grau': 'Desafie sua lógica com equações de primeiro grau! 🧠 #JuhQuiz '
-                                       '#QuizDeMatemática #Equações #Conhecimento',
-    'Biologia: mitose e meiose': 'Vamos revisar a divisão celular? 🧠 #JuhQuiz #QuizDeBiologia #Células '
-                                 '#Conhecimento',
-    'Química: ligações químicas e moléculas': 'Teste o que sabe sobre ligações químicas! 🧠 #JuhQuiz '
-                                              '#QuizDeQuímica #Moléculas #Conhecimento',
-    'Física: óptica, reflexão e refração': 'Reflexão ou refração? Confira seus conhecimentos! 🧠 #JuhQuiz '
-                                           '#QuizDeFísica #Óptica #Conhecimento',
-    'História: República Velha e Era Vargas': 'Um giro pela história do Brasil! 🧠 #JuhQuiz #QuizDeHistória '
-                                              '#EraVargas #Conhecimento',
-    'Geografia: cartografia, coordenadas e fusos horários': 'Mapas, coordenadas e fusos: quantas você '
-                                                            'acerta? 🧠 #JuhQuiz #QuizDeGeografia '
-                                                            '#Cartografia #Conhecimento',
-    'Ciências: fontes de energia renováveis e não renováveis': 'Descubra quanto sabe sobre fontes de '
-                                                               'energia! 🧠 #JuhQuiz #QuizDeCiências #Energia '
-                                                               '#Conhecimento',
-    'Literatura: narrador, enredo e personagens': 'Entre narradores e personagens, teste seus conhecimentos! '
-                                                  '🧠 #JuhQuiz #QuizDeLiteratura #Leitura #Conhecimento',
-    'Inglês: preposições de lugar e tempo': 'Vamos praticar preposições em inglês? 🧠 #JuhQuiz #QuizDeInglês '
-                                            '#English #Conhecimento',
-    'Artes: fotografia e composição visual': 'Olho atento para fotografia e composição! 🧠 #JuhQuiz '
-                                             '#QuizDeArtes #Fotografia #Conhecimento',
-    'Educação Física: hidratação e exercício físico': 'Teste seus conhecimentos sobre exercício e '
-                                                      'hidratação! 🧠 #JuhQuiz #EducaçãoFísica #Saúde '
-                                                      '#Conhecimento',
-    'Filosofia: Sócrates, Platão e Aristóteles': 'Reconhece as ideias dos filósofos gregos? 🧠 #JuhQuiz '
-                                                 '#QuizDeFilosofia #Pensamento #Conhecimento',
-    'Sociologia: redes sociais e opinião pública': 'Como as redes moldam conversas e opiniões? 🧠 #JuhQuiz '
-                                                   '#QuizDeSociologia #RedesSociais #Conhecimento',
-    'Informática: sistemas operacionais e armazenamento em nuvem': 'Teste seus conhecimentos de tecnologia! '
-                                                                   '🧠 #JuhQuiz #QuizDeInformática #Nuvem '
-                                                                   '#Conhecimento'}
+QUIZZES = {'Memória e aprendizagem': [{'pergunta': 'Qual prática tende a ajudar a lembrar um conteúdo por mais '
+                                         'tempo?',
+                             'alternativas': ['Estudar somente uma vez e nunca retomar',
+                                              'Revisar em diferentes dias',
+                                              'Manter várias distrações durante o estudo'],
+                             'correta': 1,
+                             'imagem': 'q18_20261026_t01_p01.png'},
+                            {'pergunta': 'O que é recuperar ativamente uma informação durante o estudo?',
+                             'alternativas': ['Tentar lembrar sem consultar imediatamente o material',
+                                              'Copiar um texto sem pensar no significado',
+                                              'Deixar o material aberto sem prestar atenção'],
+                             'correta': 0,
+                             'imagem': 'q18_20261026_t01_p02.png'},
+                            {'pergunta': 'Por que relacionar um conteúdo novo a conhecimentos '
+                                         'anteriores pode ajudar?',
+                             'alternativas': ['Apaga tudo que foi aprendido antes',
+                                              'Cria conexões que facilitam a compreensão',
+                                              'Dispensa qualquer atenção ao assunto'],
+                             'correta': 1,
+                             'imagem': 'q18_20261026_t01_p03.png'}],
+ 'Sono e relógio biológico': [{'pergunta': 'O que é o ritmo circadiano?',
+                               'alternativas': ['Uma fase do sono que dura um ano',
+                                                'Um ciclo biológico de aproximadamente 24 horas',
+                                                'Um reflexo que ocorre apenas ao comer'],
+                               'correta': 1,
+                               'imagem': 'q18_20261026_t02_p01.png'},
+                              {'pergunta': 'Qual sinal ambiental ajuda a ajustar o relógio biológico?',
+                               'alternativas': ['O número de páginas de um livro',
+                                                'A cor escolhida para o travesseiro',
+                                                'A alternância entre luz e escuridão'],
+                               'correta': 2,
+                               'imagem': 'q18_20261026_t02_p02.png'},
+                              {'pergunta': 'Durante o sono, o cérebro fica completamente desligado?',
+                               'alternativas': ['Sim, não ocorre nenhuma atividade cerebral',
+                                                'Sim, todas as suas células deixam de funcionar',
+                                                'Não, continua realizando atividades importantes'],
+                               'correta': 2,
+                               'imagem': 'q18_20261026_t02_p03.png'}],
+ 'Ilusões de óptica': [{'pergunta': 'Por que uma ilusão de óptica pode nos enganar?',
+                        'alternativas': ['O objeto sempre muda fisicamente de tamanho',
+                                         'Os olhos deixam de receber qualquer luz',
+                                         'O cérebro interpreta pistas visuais de modo que pode diferir '
+                                         'da realidade'],
+                        'correta': 2,
+                        'imagem': 'q18_20261026_t03_p01.png'},
+                       {'pergunta': 'Dois objetos iguais podem parecer de tamanhos diferentes por causa '
+                                    'do entorno?',
+                        'alternativas': ['Sim, o contexto visual pode influenciar a percepção',
+                                         'Sim, porque o entorno altera obrigatoriamente sua massa',
+                                         'Não, o entorno nunca influencia o que percebemos'],
+                        'correta': 0,
+                        'imagem': 'q18_20261026_t03_p02.png'},
+                       {'pergunta': 'Uma imagem parada pode criar uma sensação de movimento?',
+                        'alternativas': ['Sim, certos padrões visuais podem produzir essa percepção',
+                                         'Sim, porque o papel passa a se deslocar sozinho',
+                                         'Não, toda sensação de movimento exige uma tela de vídeo'],
+                        'correta': 0,
+                        'imagem': 'q18_20261026_t03_p03.png'}],
+ 'Som e instrumentos musicais': [{'pergunta': 'O som é produzido por qual fenômeno?',
+                                  'alternativas': ['Evaporação', 'Fotossíntese', 'Vibração'],
+                                  'correta': 2,
+                                  'imagem': 'q18_20261026_t04_p01.png'},
+                                 {'pergunta': 'Qual característica está mais ligada à altura de um som, '
+                                              'grave ou agudo?',
+                                  'alternativas': ['Cor do instrumento',
+                                                   'Peso de quem escuta',
+                                                   'Frequência'],
+                                  'correta': 2,
+                                  'imagem': 'q18_20261026_t04_p02.png'},
+                                 {'pergunta': 'Para se propagar, o som precisa de quê?',
+                                  'alternativas': ['Um circuito eletrônico',
+                                                   'Luz solar direta',
+                                                   'Um meio material'],
+                                  'correta': 2,
+                                  'imagem': 'q18_20261026_t04_p03.png'}],
+ 'Pontes e estruturas': [{'pergunta': 'O que uma estrutura precisa fazer com as cargas que recebe?',
+                          'alternativas': ['Transmiti-las até os apoios de forma segura',
+                                           'Transformá-las automaticamente em luz',
+                                           'Eliminar toda força da gravidade'],
+                          'correta': 0,
+                          'imagem': 'q18_20261026_t05_p01.png'},
+                         {'pergunta': 'Em engenharia, o que significa compressão?',
+                          'alternativas': ['Uma força que sempre aquece o ar',
+                                           'Uma mudança que torna qualquer material líquido',
+                                           'Uma força que tende a apertar ou encurtar um corpo'],
+                          'correta': 2,
+                          'imagem': 'q18_20261026_t05_p02.png'},
+                         {'pergunta': 'Por que materiais diferentes podem ser escolhidos para uma '
+                                      'ponte?',
+                          'alternativas': ['Têm propriedades e resistências diferentes',
+                                           'Todos se comportam exatamente da mesma forma',
+                                           'A escolha depende somente da cor da pintura'],
+                          'correta': 0,
+                          'imagem': 'q18_20261026_t05_p03.png'}],
+ 'Vulcões e placas tectônicas': [{'pergunta': 'O que são placas tectônicas?',
+                                  'alternativas': ['Grandes porções da litosfera terrestre',
+                                                   'Blocos de gelo que cobrem todos os continentes',
+                                                   'Camadas de nuvens acima dos oceanos'],
+                                  'correta': 0,
+                                  'imagem': 'q18_20261026_t06_p01.png'},
+                                 {'pergunta': 'Como se chama o magma depois que chega à superfície?',
+                                  'alternativas': ['Granizo', 'Lava', 'Vapor'],
+                                  'correta': 1,
+                                  'imagem': 'q18_20261026_t06_p02.png'},
+                                 {'pergunta': 'Todo terremoto provoca uma erupção vulcânica?',
+                                  'alternativas': ['Sim, todo tremor cria imediatamente um vulcão',
+                                                   'Sim, se o terremoto acontecer durante a noite',
+                                                   'Não, terremotos podem ocorrer sem erupção'],
+                                  'correta': 2,
+                                  'imagem': 'q18_20261026_t06_p03.png'}],
+ 'Fósseis e extinções': [{'pergunta': 'O que um fóssil pode representar?',
+                          'alternativas': ['Somente animais que ainda vivem hoje',
+                                           'Restos ou vestígios de seres vivos do passado',
+                                           'Qualquer pedra produzida em uma fábrica'],
+                          'correta': 1,
+                          'imagem': 'q18_20261026_t07_p01.png'},
+                         {'pergunta': 'Por que fósseis ajudam a estudar ambientes antigos?',
+                          'alternativas': ['Mostram apenas a temperatura do dia atual',
+                                           'Fornecem pistas sobre organismos e condições do passado',
+                                           'Registram todos os acontecimentos sem nenhuma lacuna'],
+                          'correta': 1,
+                          'imagem': 'q18_20261026_t07_p02.png'},
+                         {'pergunta': 'O que significa dizer que uma espécie foi extinta?',
+                          'alternativas': ['Não existem mais indivíduos vivos dessa espécie',
+                                           'A espécie passou a viver somente no inverno',
+                                           'Todos os indivíduos estão dormindo'],
+                          'correta': 0,
+                          'imagem': 'q18_20261026_t07_p03.png'}],
+ 'Animais polinizadores': [{'pergunta': 'O que acontece na polinização?',
+                            'alternativas': ['As raízes são retiradas do solo',
+                                             'O pólen é transferido para a estrutura receptora de uma '
+                                             'flor',
+                                             'As folhas se transformam diretamente em frutos'],
+                            'correta': 1,
+                            'imagem': 'q18_20261026_t08_p01.png'},
+                           {'pergunta': 'Além das abelhas, qual destes animais pode atuar como '
+                                        'polinizador?',
+                            'alternativas': ['Morcego', 'Estrela-do-mar', 'Minhoca'],
+                            'correta': 0,
+                            'imagem': 'q18_20261026_t08_p02.png'},
+                           {'pergunta': 'Por que a diversidade de polinizadores é importante?',
+                            'alternativas': ['Todas as plantas dependem de um único inseto',
+                                             'Ela impede qualquer formação de sementes',
+                                             'Diferentes animais podem atender diferentes plantas'],
+                            'correta': 2,
+                            'imagem': 'q18_20261026_t08_p03.png'}],
+ 'Fungos e decomposição': [{'pergunta': 'Os fungos produzem seu próprio alimento por fotossíntese?',
+                            'alternativas': ['Não, obtêm nutrientes de matéria orgânica',
+                                             'Sim, somente durante a noite',
+                                             'Sim, todos possuem folhas verdes'],
+                            'correta': 0,
+                            'imagem': 'q18_20261026_t09_p01.png'},
+                           {'pergunta': 'Qual é uma contribuição dos fungos decompositores?',
+                            'alternativas': ['Impedir toda transformação de matéria',
+                                             'Participar da reciclagem de nutrientes',
+                                             'Criar luz solar no interior do solo'],
+                            'correta': 1,
+                            'imagem': 'q18_20261026_t09_p02.png'},
+                           {'pergunta': 'As leveduras usadas na produção de pão pertencem a qual grupo?',
+                            'alternativas': ['Plantas', 'Mamíferos', 'Fungos'],
+                            'correta': 2,
+                            'imagem': 'q18_20261026_t09_p03.png'}],
+ 'Adaptações das plantas': [{'pergunta': 'Qual característica ajuda muitos cactos a enfrentar períodos '
+                                         'secos?',
+                             'alternativas': ['Armazenar água em tecidos do caule',
+                                              'Produzir gelo continuamente nas raízes',
+                                              'Viver sem realizar trocas com o ambiente'],
+                             'correta': 0,
+                             'imagem': 'q18_20261026_t10_p01.png'},
+                            {'pergunta': 'O crescimento de uma planta em direção à luz é um exemplo de '
+                                         'quê?',
+                             'alternativas': ['Erosão', 'Fermentação', 'Fototropismo'],
+                             'correta': 2,
+                             'imagem': 'q18_20261026_t10_p02.png'},
+                            {'pergunta': 'Por que folhas e caules podem ter características diferentes '
+                                         'entre espécies?',
+                             'alternativas': ['Todas as diferenças surgem apenas pela idade da folha',
+                                              'As plantas apresentam estratégias adaptadas a diferentes '
+                                              'condições',
+                                              'Toda planta precisa viver no mesmo ambiente'],
+                             'correta': 1,
+                             'imagem': 'q18_20261026_t10_p03.png'}],
+ 'Ciência na cozinha': [{'pergunta': 'Quando o gelo derrete, ocorre principalmente qual transformação?',
+                         'alternativas': ['Mudança de estado físico',
+                                          'Produção de sal de cozinha',
+                                          'Formação de um novo elemento químico'],
+                         'correta': 0,
+                         'imagem': 'q18_20261026_t11_p01.png'},
+                        {'pergunta': 'Por que mexer costuma ajudar o açúcar a se dissolver na água?',
+                         'alternativas': ['Transforma o açúcar em uma substância insolúvel',
+                                          'Retira todos os átomos de oxigênio da água',
+                                          'Favorece o contato e a dispersão do açúcar na água'],
+                         'correta': 2,
+                         'imagem': 'q18_20261026_t11_p02.png'},
+                        {'pergunta': 'A formação de novas substâncias caracteriza qual tipo de '
+                                     'transformação?',
+                         'alternativas': ['Química',
+                                          'Apenas mudança de posição',
+                                          'Apenas mudança de tamanho'],
+                         'correta': 0,
+                         'imagem': 'q18_20261026_t11_p03.png'}],
+ 'Conservação dos alimentos': [{'pergunta': 'Qual é um efeito da refrigeração sobre muitos '
+                                            'microrganismos dos alimentos?',
+                                'alternativas': ['Retardar sua multiplicação',
+                                                 'Destruir obrigatoriamente todos eles',
+                                                 'Transformá-los em nutrientes'],
+                                'correta': 0,
+                                'imagem': 'q18_20261026_t12_p01.png'},
+                               {'pergunta': 'Por que secar um alimento pode ajudar a conservá-lo?',
+                                'alternativas': ['Reduz a água disponível para muitos microrganismos',
+                                                 'Garante que nenhum cuidado de higiene seja necessário',
+                                                 'Adiciona água continuamente ao alimento'],
+                                'correta': 0,
+                                'imagem': 'q18_20261026_t12_p02.png'},
+                               {'pergunta': 'Congelar um alimento garante que ele fique seguro para '
+                                            'sempre?',
+                                'alternativas': ['Sim, o tempo deixa de ter qualquer efeito',
+                                                 'Não, armazenamento e manipulação continuam '
+                                                 'importantes',
+                                                 'Sim, qualquer alimento contaminado fica '
+                                                 'automaticamente seguro'],
+                                'correta': 1,
+                                'imagem': 'q18_20261026_t12_p03.png'}],
+ 'Mapas e orientação': [{'pergunta': 'Em uma escala de 1:100.000, 1 cm no mapa representa quanto no '
+                                     'terreno?',
+                         'alternativas': ['10 m', '1 km', '100 km'],
+                         'correta': 1,
+                         'imagem': 'q18_20261026_t13_p01.png'},
+                        {'pergunta': 'A latitude indica a posição de um ponto em relação a qual '
+                                     'referência?',
+                         'alternativas': ['Linha do Equador',
+                                          'Meridiano de Greenwich',
+                                          'Trópico de Capricórnio'],
+                         'correta': 0,
+                         'imagem': 'q18_20261026_t13_p02.png'},
+                        {'pergunta': 'Qual fenômeno permite a orientação de uma bússola magnética?',
+                         'alternativas': ['A pressão do ar dentro do mapa',
+                                          'O movimento das marés',
+                                          'O campo magnético terrestre'],
+                         'correta': 2,
+                         'imagem': 'q18_20261026_t13_p03.png'}],
+ 'Probabilidade no cotidiano': [{'pergunta': 'Ao lançar uma moeda equilibrada, qual é a chance de sair '
+                                             'cara?',
+                                 'alternativas': ['1 em 3', '1 em 2', '1 em 4'],
+                                 'correta': 1,
+                                 'imagem': 'q18_20261026_t14_p01.png'},
+                                {'pergunta': 'Em um dado comum equilibrado, qual é a chance de sair um '
+                                             'número par?',
+                                 'alternativas': ['1 em 6', '3 em 6', '5 em 6'],
+                                 'correta': 1,
+                                 'imagem': 'q18_20261026_t14_p02.png'},
+                                {'pergunta': 'Uma sacola tem 3 bolas azuis e 1 vermelha. Qual cor tem '
+                                             'maior chance de sair em uma retirada ao acaso?',
+                                 'alternativas': ['As duas têm a mesma chance', 'Azul', 'Vermelha'],
+                                 'correta': 1,
+                                 'imagem': 'q18_20261026_t14_p03.png'}],
+ 'Origem das palavras': [{'pergunta': 'Como se chama o estudo da origem e da história das palavras?',
+                          'alternativas': ['Meteorologia', 'Geometria', 'Etimologia'],
+                          'correta': 2,
+                          'imagem': 'q18_20261026_t15_p01.png'},
+                         {'pergunta': 'De qual língua o português se desenvolveu principalmente?',
+                          'alternativas': ['Russo', 'Japonês', 'Latim'],
+                          'correta': 2,
+                          'imagem': 'q18_20261026_t15_p02.png'},
+                         {'pergunta': 'O uso de uma palavra de outra língua é chamado de quê?',
+                          'alternativas': ['Multiplicação silábica',
+                                           'Empréstimo linguístico',
+                                           'Eclipse linguístico'],
+                          'correta': 1,
+                          'imagem': 'q18_20261026_t15_p03.png'}]}
+
+LEGENDAS = {'Memória e aprendizagem': 'CAPA_SEGUNDOS=2\n'
+                           '\n'
+                           'Memória e estudo: teste seus conhecimentos sobre como aprendemos!\n'
+                           '#Memoria #Aprendizagem #Estudo #Educacao',
+ 'Sono e relógio biológico': 'CAPA_SEGUNDOS=2\n'
+                             '\n'
+                             'Sono também é ciência. Quantas destas três perguntas você acerta?\n'
+                             '#Sono #RitmoCircadiano #Cerebro #Ciencia',
+ 'Ilusões de óptica': 'CAPA_SEGUNDOS=2\n'
+                      '\n'
+                      'Olhar nem sempre é perceber exatamente. Teste o que sabe sobre ilusões de '
+                      'óptica!\n'
+                      '#IlusoesDeOptica #PercepcaoVisual #Cerebro #Ciencia',
+ 'Som e instrumentos musicais': 'CAPA_SEGUNDOS=2\n'
+                                '\n'
+                                'Grave, agudo e vibração: três perguntas sobre a ciência do som.\n'
+                                '#Som #Musica #Fisica #InstrumentosMusicais',
+ 'Pontes e estruturas': 'CAPA_SEGUNDOS=2\n'
+                        '\n'
+                        'Como as pontes permanecem de pé? Teste seus conhecimentos sobre estruturas.\n'
+                        '#Pontes #Engenharia #Estruturas #Fisica',
+ 'Vulcões e placas tectônicas': 'CAPA_SEGUNDOS=2\n'
+                                '\n'
+                                'A Terra está em transformação: três perguntas sobre vulcões e '
+                                'tectônica.\n'
+                                '#Vulcoes #PlacasTectonicas #Geologia #Ciencia',
+ 'Fósseis e extinções': 'CAPA_SEGUNDOS=2\n'
+                        '\n'
+                        'Pistas guardadas nas rochas: teste o que sabe sobre fósseis e extinções.\n'
+                        '#Fosseis #Paleontologia #Extincao #HistoriaDaTerra',
+ 'Animais polinizadores': 'CAPA_SEGUNDOS=2\n'
+                          '\n'
+                          'Abelhas não trabalham sozinhas! Conheça melhor os animais polinizadores.\n'
+                          '#Polinizadores #Biodiversidade #Plantas #Natureza',
+ 'Fungos e decomposição': 'CAPA_SEGUNDOS=2\n'
+                          '\n'
+                          'Muito além dos cogumelos: três perguntas sobre fungos e decomposição.\n'
+                          '#Fungos #Decomposicao #Biologia #Natureza',
+ 'Adaptações das plantas': 'CAPA_SEGUNDOS=2\n'
+                           '\n'
+                           'Do cacto às folhas: teste o que sabe sobre as adaptações das plantas.\n'
+                           '#AdaptacoesDasPlantas #Botanica #Biologia #Natureza',
+ 'Ciência na cozinha': 'CAPA_SEGUNDOS=2\n'
+                       '\n'
+                       'A cozinha é um laboratório do cotidiano. Quantas você acerta?\n'
+                       '#CienciaNaCozinha #Quimica #Transformacoes #Educacao',
+ 'Conservação dos alimentos': 'CAPA_SEGUNDOS=2\n'
+                              '\n'
+                              'Frio, secagem e cuidados: três perguntas sobre conservação dos '
+                              'alimentos.\n'
+                              '#ConservacaoDeAlimentos #Alimentos #Ciencia #Educacao',
+ 'Mapas e orientação': 'CAPA_SEGUNDOS=2\n'
+                       '\n'
+                       'Você se orienta bem? Teste seus conhecimentos sobre mapas e coordenadas.\n'
+                       '#Mapas #Cartografia #Orientacao #Geografia',
+ 'Probabilidade no cotidiano': 'CAPA_SEGUNDOS=2\n'
+                               '\n'
+                               'Moedas, dados e sorteios: três desafios de probabilidade.\n'
+                               '#Probabilidade #Matematica #Raciocinio #Educacao',
+ 'Origem das palavras': 'CAPA_SEGUNDOS=2\n'
+                        '\n'
+                        'As palavras também têm história. Teste seus conhecimentos sobre a língua '
+                        'portuguesa.\n'
+                        '#Etimologia #LinguaPortuguesa #Palavras #Educacao'}
