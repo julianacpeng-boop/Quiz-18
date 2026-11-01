@@ -1,504 +1,240 @@
-# Juh Quiz 18 — 15 temas, 45 perguntas e 45 caricaturas com fundo.
-# Imagens em imagens_perguntas/. Índice da alternativa correta começa em zero.
+# Quiz 18 — TV dos anos 2000. 15 temas, 45 perguntas e 45 imagens.
+# Alternativa correta: índice iniciado em zero.
 
-QUIZZES = {
-    "Mistérios das profundezas": [
-        {
-            "pergunta": "Como se chama a produção de luz por seres vivos?",
-            "alternativas": [
-                "Bioluminescência",
-                "Fotossíntese",
-                "Evaporação"
-            ],
-            "correta": 0,
-            "imagem": "q18_20261101_t01_p01.png"
-        },
-        {
-            "pergunta": "O que acontece com a pressão da água conforme aumenta a profundidade?",
-            "alternativas": [
-                "Diminui sempre",
-                "Aumenta",
-                "Permanece igual"
-            ],
-            "correta": 1,
-            "imagem": "q18_20261101_t01_p02.png"
-        },
-        {
-            "pergunta": "Qual equipamento permite explorar grandes profundidades sem levar pessoas a bordo?",
-            "alternativas": [
-                "Balão meteorológico",
-                "Telescópio óptico",
-                "Veículo submarino operado remotamente"
-            ],
-            "correta": 2,
-            "imagem": "q18_20261101_t01_p03.png"
-        }
-    ],
-    "Vulcões e fenômenos da Terra": [
-        {
-            "pergunta": "Como é chamado o magma quando chega à superfície?",
-            "alternativas": [
-                "Granito",
-                "Lava",
-                "Vapor"
-            ],
-            "correta": 1,
-            "imagem": "q18_20261101_t02_p01.png"
-        },
-        {
-            "pergunta": "O que caracteriza um gêiser?",
-            "alternativas": [
-                "Uma corrente de ar gelado",
-                "Uma onda provocada pela Lua",
-                "Jatos periódicos de água quente e vapor"
-            ],
-            "correta": 2,
-            "imagem": "q18_20261101_t02_p02.png"
-        },
-        {
-            "pergunta": "Qual processo pode formar uma nova ilha oceânica?",
-            "alternativas": [
-                "Acúmulo de material de erupções submarinas",
-                "Congelamento de nuvens",
-                "Acúmulo de folhas flutuantes"
-            ],
-            "correta": 0,
-            "imagem": "q18_20261101_t02_p03.png"
-        }
-    ],
-    "Segredos da Lua": [
-        {
-            "pergunta": "Por que conseguimos ver a Lua iluminada?",
-            "alternativas": [
-                "Ela produz luz como uma estrela",
-                "Ela reflete apenas as luzes das cidades",
-                "Ela reflete a luz do Sol"
-            ],
-            "correta": 2,
-            "imagem": "q18_20261101_t03_p01.png"
-        },
-        {
-            "pergunta": "O que explica as diferentes fases da Lua?",
-            "alternativas": [
-                "A mudança da porção iluminada que vemos da Terra",
-                "Uma mudança no formato real da Lua",
-                "A sombra da Terra em todas as semanas"
-            ],
-            "correta": 0,
-            "imagem": "q18_20261101_t03_p02.png"
-        },
-        {
-            "pergunta": "O que formou grande parte das crateras lunares?",
-            "alternativas": [
-                "Chuvas intensas",
-                "Impactos de objetos espaciais",
-                "Raízes de plantas"
-            ],
-            "correta": 1,
-            "imagem": "q18_20261101_t03_p03.png"
-        }
-    ],
-    "Plantas surpreendentes": [
-        {
-            "pergunta": "Por que muitas plantas carnívoras capturam pequenos animais?",
-            "alternativas": [
-                "Para obter nutrientes escassos no solo",
-                "Para deixar de fazer fotossíntese",
-                "Para produzir pedras"
-            ],
-            "correta": 0,
-            "imagem": "q18_20261101_t04_p01.png"
-        },
-        {
-            "pergunta": "Qual planta é conhecida por fechar as folhas quando tocada?",
-            "alternativas": [
-                "Girassol",
-                "Dormideira",
-                "Coqueiro"
-            ],
-            "correta": 1,
-            "imagem": "q18_20261101_t04_p02.png"
-        },
-        {
-            "pergunta": "Qual grupo de árvores inclui algumas das mais altas do mundo?",
-            "alternativas": [
-                "Bonsais",
-                "Jabuticabeiras",
-                "Sequoias"
-            ],
-            "correta": 2,
-            "imagem": "q18_20261101_t04_p03.png"
-        }
-    ],
-    "Animais mestres do disfarce": [
-        {
-            "pergunta": "Qual animal marinho é conhecido por mudar rapidamente a cor e a textura da pele?",
-            "alternativas": [
-                "Cavalo-marinho",
-                "Polvo",
-                "Tartaruga-verde"
-            ],
-            "correta": 1,
-            "imagem": "q18_20261101_t05_p01.png"
-        },
-        {
-            "pergunta": "Qual inseto tem aparência semelhante à de um galho?",
-            "alternativas": [
-                "Joaninha",
-                "Libélula",
-                "Bicho-pau"
-            ],
-            "correta": 2,
-            "imagem": "q18_20261101_t05_p02.png"
-        },
-        {
-            "pergunta": "Qual é uma vantagem da camuflagem para muitos animais?",
-            "alternativas": [
-                "Dificultar a detecção por predadores ou presas",
-                "Eliminar a necessidade de água",
-                "Impedir qualquer movimento"
-            ],
-            "correta": 0,
-            "imagem": "q18_20261101_t05_p03.png"
-        }
-    ],
-    "Pedras preciosas e minerais": [
-        {
-            "pergunta": "Qual mineral é conhecido por sua elevada dureza, sendo o padrão 10 na escala de Mohs?",
-            "alternativas": [
-                "Talco",
-                "Gesso",
-                "Diamante"
-            ],
-            "correta": 2,
-            "imagem": "q18_20261101_t06_p01.png"
-        },
-        {
-            "pergunta": "A ametista é uma variedade de qual mineral?",
-            "alternativas": [
-                "Quartzo",
-                "Calcita",
-                "Halita"
-            ],
-            "correta": 0,
-            "imagem": "q18_20261101_t06_p02.png"
-        },
-        {
-            "pergunta": "Como se chama o profissional que lapida pedras preciosas?",
-            "alternativas": [
-                "Cartógrafo",
-                "Lapidário",
-                "Meteorologista"
-            ],
-            "correta": 1,
-            "imagem": "q18_20261101_t06_p03.png"
-        }
-    ],
-    "Invenções que já existiam na Antiguidade": [
-        {
-            "pergunta": "Qual povo é associado à construção de grandes aquedutos como os de Roma?",
-            "alternativas": [
-                "Romanos",
-                "Astecas",
-                "Vikings"
-            ],
-            "correta": 0,
-            "imagem": "q18_20261101_t07_p01.png"
-        },
-        {
-            "pergunta": "O mecanismo de Anticítera é conhecido por calcular fenômenos de que área?",
-            "alternativas": [
-                "Botânica",
-                "Astronomia",
-                "Culinária"
-            ],
-            "correta": 1,
-            "imagem": "q18_20261101_t07_p02.png"
-        },
-        {
-            "pergunta": "A eolípila descrita por Heron de Alexandria funcionava com a ação de quê?",
-            "alternativas": [
-                "Gasolina",
-                "Pilhas elétricas",
-                "Vapor"
-            ],
-            "correta": 2,
-            "imagem": "q18_20261101_t07_p03.png"
-        }
-    ],
-    "Material escolar de antigamente": [
-        {
-            "pergunta": "Qual objeto era usado para escrever repetidamente e treinar a letra?",
-            "alternativas": [
-                "Mapa-múndi",
-                "Caderno de caligrafia",
-                "Transferidor"
-            ],
-            "correta": 1,
-            "imagem": "q18_20261101_t08_p01.png"
-        },
-        {
-            "pergunta": "Para que servia o mata-borrão?",
-            "alternativas": [
-                "Apontar lápis",
-                "Medir ângulos",
-                "Absorver o excesso de tinta"
-            ],
-            "correta": 2,
-            "imagem": "q18_20261101_t08_p02.png"
-        },
-        {
-            "pergunta": "Qual acessório era usado para apontar lápis manualmente?",
-            "alternativas": [
-                "Apontador",
-                "Grampeador",
-                "Compasso"
-            ],
-            "correta": 0,
-            "imagem": "q18_20261101_t08_p03.png"
-        }
-    ],
-    "Doces que marcaram a infância": [
-        {
-            "pergunta": "No doce Dipnlik, o pirulito era combinado com quê?",
-            "alternativas": [
-                "Uma fatia de pão",
-                "Um pedaço de queijo",
-                "Um pó doce"
-            ],
-            "correta": 2,
-            "imagem": "q18_20261101_t09_p01.png"
-        },
-        {
-            "pergunta": "Qual era o jeito característico de consumir um Push Pop?",
-            "alternativas": [
-                "Empurrar o doce para fora do tubo",
-                "Espalhar o doce no pão",
-                "Assar o doce no forno"
-            ],
-            "correta": 0,
-            "imagem": "q18_20261101_t09_p02.png"
-        },
-        {
-            "pergunta": "Qual doce ficou conhecido pelo formato que imita um pequeno guarda-chuva?",
-            "alternativas": [
-                "Paçoca rolha",
-                "Chocolate guarda-chuva",
-                "Pé de moleque"
-            ],
-            "correta": 1,
-            "imagem": "q18_20261101_t09_p03.png"
-        }
-    ],
-    "Orelhão e telefone de disco": [
-        {
-            "pergunta": "Como as ligações eram inicialmente selecionadas em um telefone de disco?",
-            "alternativas": [
-                "Girando o disco numerado",
-                "Deslizando uma tela sensível ao toque",
-                "Escaneando um QR Code"
-            ],
-            "correta": 0,
-            "imagem": "q18_20261101_t10_p01.png"
-        },
-        {
-            "pergunta": "Qual objeto era inserido em muitos orelhões antes da popularização dos cartões telefônicos?",
-            "alternativas": [
-                "Disquete",
-                "Ficha telefônica",
-                "Cartão de memória"
-            ],
-            "correta": 1,
-            "imagem": "q18_20261101_t10_p02.png"
-        },
-        {
-            "pergunta": "Em uma ligação a cobrar, quem aceita pagar pela chamada?",
-            "alternativas": [
-                "Sempre quem faz a ligação",
-                "O fabricante do telefone",
-                "Quem recebe a ligação"
-            ],
-            "correta": 2,
-            "imagem": "q18_20261101_t10_p03.png"
-        }
-    ],
-    "Fotografias antes do celular": [
-        {
-            "pergunta": "O que era colocado em muitas câmeras analógicas para registrar as fotos?",
-            "alternativas": [
-                "Fita VHS",
-                "Filme fotográfico",
-                "Disquete"
-            ],
-            "correta": 1,
-            "imagem": "q18_20261101_t11_p01.png"
-        },
-        {
-            "pergunta": "O que significa revelar um filme fotográfico?",
-            "alternativas": [
-                "Apagar as fotografias",
-                "Transformar a câmera em impressora",
-                "Processar quimicamente as imagens registradas"
-            ],
-            "correta": 2,
-            "imagem": "q18_20261101_t11_p02.png"
-        },
-        {
-            "pergunta": "O que costuma caracterizar um negativo fotográfico colorido?",
-            "alternativas": [
-                "Cores e luminosidades invertidas em relação à imagem final",
-                "Som gravado junto com cada imagem",
-                "Uma fotografia feita apenas à noite"
-            ],
-            "correta": 0,
-            "imagem": "q18_20261101_t11_p03.png"
-        }
-    ],
-    "Cartas e bilhetinhos": [
-        {
-            "pergunta": "Para que serve o selo em uma carta enviada pelo correio?",
-            "alternativas": [
-                "Informar a previsão do tempo",
-                "Substituir o endereço do destinatário",
-                "Comprovar o pagamento da postagem"
-            ],
-            "correta": 2,
-            "imagem": "q18_20261101_t12_p01.png"
-        },
-        {
-            "pergunta": "Quem é o remetente de uma carta?",
-            "alternativas": [
-                "A pessoa que envia",
-                "A pessoa que recebe",
-                "Qualquer vizinho do destinatário"
-            ],
-            "correta": 0,
-            "imagem": "q18_20261101_t12_p02.png"
-        },
-        {
-            "pergunta": "O que significa a sigla CEP no endereço brasileiro?",
-            "alternativas": [
-                "Cadastro Escolar Permanente",
-                "Código de Endereçamento Postal",
-                "Central de Entregas Particulares"
-            ],
-            "correta": 1,
-            "imagem": "q18_20261101_t12_p03.png"
-        }
-    ],
-    "Mercadinhos de bairro de antigamente": [
-        {
-            "pergunta": "O que costumava ser anotado na caderneta do fiado?",
-            "alternativas": [
-                "Compras para pagamento posterior",
-                "A previsão do tempo",
-                "O resultado de exames"
-            ],
-            "correta": 0,
-            "imagem": "q18_20261101_t13_p01.png"
-        },
-        {
-            "pergunta": "O que significa comprar um produto a granel?",
-            "alternativas": [
-                "Comprar somente caixas fechadas",
-                "Comprar a quantidade desejada de produto vendido sem embalagem individual",
-                "Receber tudo gratuitamente"
-            ],
-            "correta": 1,
-            "imagem": "q18_20261101_t13_p02.png"
-        },
-        {
-            "pergunta": "Para que serve a função tara de uma balança?",
-            "alternativas": [
-                "Aumentar o preço do produto",
-                "Medir a temperatura do alimento",
-                "Descontar o peso do recipiente"
-            ],
-            "correta": 2,
-            "imagem": "q18_20261101_t13_p03.png"
-        }
-    ],
-    "Fliperamas e videogames de cartucho": [
-        {
-            "pergunta": "O que normalmente era inserido no fliperama para iniciar uma partida?",
-            "alternativas": [
-                "Fita cassete",
-                "Ficha ou moeda",
-                "Selo postal"
-            ],
-            "correta": 1,
-            "imagem": "q18_20261101_t14_p01.png"
-        },
-        {
-            "pergunta": "Em videogames de cartucho, onde ficava armazenado o jogo?",
-            "alternativas": [
-                "No cabo da televisão",
-                "Na tomada da parede",
-                "No cartucho"
-            ],
-            "correta": 2,
-            "imagem": "q18_20261101_t14_p02.png"
-        },
-        {
-            "pergunta": "Por que soprar cartuchos não é uma boa prática de conservação?",
-            "alternativas": [
-                "A umidade do sopro pode favorecer corrosão dos contatos",
-                "O sopro apaga automaticamente o programa",
-                "O cartucho fica magnetizado pelo ar"
-            ],
-            "correta": 0,
-            "imagem": "q18_20261101_t14_p03.png"
-        }
-    ],
-    "Rádio e fitas cassete": [
-        {
-            "pergunta": "Qual botão de um gravador era usado para registrar som em uma fita?",
-            "alternativas": [
-                "EJECT",
-                "PLAY",
-                "REC"
-            ],
-            "correta": 2,
-            "imagem": "q18_20261101_t15_p01.png"
-        },
-        {
-            "pergunta": "Por que se usava uma caneta ou um lápis no carretel da fita cassete?",
-            "alternativas": [
-                "Para girá-lo e rebobinar a fita manualmente",
-                "Para apagar o som por magnetismo",
-                "Para transformar a fita em CD"
-            ],
-            "correta": 0,
-            "imagem": "q18_20261101_t15_p02.png"
-        },
-        {
-            "pergunta": "Como muitos ouvintes participavam da programação musical de uma rádio?",
-            "alternativas": [
-                "Inserindo um cartucho no rádio",
-                "Ligando para pedir músicas",
-                "Trocando a antena por uma fita"
-            ],
-            "correta": 1,
-            "imagem": "q18_20261101_t15_p03.png"
-        }
-    ]
-}
+QUIZZES = {'TV Globinho': [{'pergunta': 'Qual destes desenhos japoneses fez parte da TV Globinho?',
+                  'alternativas': ['Dragon Ball Z', 'Peppa Pig', 'Patrulha Canina'],
+                  'correta': 0,
+                  'imagem': 'tv2000_t01_p01.jpg'},
+                 {'pergunta': 'Como os desenhos eram apresentados na TV Globinho dos anos 2000?',
+                  'alternativas': ['Em um programa com apresentadores e blocos de animação',
+                                   'Apenas durante o jornal da noite',
+                                   'Só em sessões de cinema'],
+                  'correta': 0,
+                  'imagem': 'tv2000_t01_p02.jpg'},
+                 {'pergunta': 'Qual destas atrizes apresentou a TV Globinho ainda jovem?',
+                  'alternativas': ['Regina Duarte', 'Marina Ruy Barbosa', 'Fernanda Montenegro'],
+                  'correta': 1,
+                  'imagem': 'tv2000_t01_p03.jpg'}],
+ 'Bom Dia & Cia': [{'pergunta': 'Qual dupla marcou o Bom Dia & Cia na segunda metade dos anos 2000?',
+                    'alternativas': ['Angélica e Luciano', 'Sandy e Junior', 'Yudi e Priscilla'],
+                    'correta': 2,
+                    'imagem': 'tv2000_t02_p01.jpg'},
+                   {'pergunta': 'Qual prêmio virou um dos símbolos das brincadeiras do programa?',
+                    'alternativas': ['Um automóvel', 'Uma viagem à Lua', 'Um PlayStation'],
+                    'correta': 2,
+                    'imagem': 'tv2000_t02_p02.jpg'},
+                   {'pergunta': 'Como as crianças de casa costumavam participar das brincadeiras?',
+                    'alternativas': ['Por carta entregue no estúdio',
+                                     'Por aplicativo de videochamada',
+                                     'Por telefone'],
+                    'correta': 2,
+                    'imagem': 'tv2000_t02_p03.jpg'}],
+ 'Vídeo Show': [{'pergunta': 'O que o Vídeo Show mostrava além das cenas exibidas na televisão?',
+                 'alternativas': ['Bastidores das produções',
+                                  'Exclusivamente partidas de futebol',
+                                  'Somente previsão do tempo'],
+                 'correta': 0,
+                 'imagem': 'tv2000_t03_p01.jpg'},
+                {'pergunta': 'Qual dupla de apresentadores marcou uma longa fase do Vídeo Show?',
+                 'alternativas': ['Serginho Groisman e Xuxa',
+                                  'Miguel Falabella e Cissa Guimarães',
+                                  'William Bonner e Fátima Bernardes'],
+                 'correta': 1,
+                 'imagem': 'tv2000_t03_p02.jpg'},
+                {'pergunta': 'Qual quadro recuperava trabalhos antigos de artistas da Globo?',
+                 'alternativas': ['Show dos Famosos', 'Dança dos Famosos', 'Túnel do Tempo'],
+                 'correta': 2,
+                 'imagem': 'tv2000_t03_p03.jpg'}],
+ 'Pânico na TV': [{'pergunta': 'Em qual emissora o Pânico na TV estreou em 2003?',
+                   'alternativas': ['Band', 'RedeTV!', 'Record'],
+                   'correta': 1,
+                   'imagem': 'tv2000_t04_p01.jpg'},
+                  {'pergunta': 'Antes de chegar à televisão, o Pânico já existia em qual meio?',
+                   'alternativas': ['Quadrinhos', 'Cinema', 'Rádio'],
+                   'correta': 2,
+                   'imagem': 'tv2000_t04_p02.jpg'},
+                  {'pergunta': 'Quem comandava a apresentação do Pânico na TV?',
+                   'alternativas': ['Emílio Surita', 'Marcos Mion', 'Rodrigo Faro'],
+                   'correta': 0,
+                   'imagem': 'tv2000_t04_p03.jpg'}],
+ 'Sítio do Picapau Amarelo': [{'pergunta': 'Na versão de 2001, quem interpretou a boneca Emília?',
+                               'alternativas': ['Sasha Meneghel', 'Bruna Marquezine', 'Isabelle Drummond'],
+                               'correta': 2,
+                               'imagem': 'tv2000_t05_p01.jpg'},
+                              {'pergunta': 'Qual personagem do Sítio é um sabugo de milho que se comporta '
+                                           'como um sábio?',
+                               'alternativas': ['Visconde de Sabugosa', 'Rabicó', 'Quindim'],
+                               'correta': 0,
+                               'imagem': 'tv2000_t05_p02.jpg'},
+                              {'pergunta': 'Quem criou os personagens que deram origem ao Sítio?',
+                               'alternativas': ['Ziraldo', 'Monteiro Lobato', 'Mauricio de Sousa'],
+                               'correta': 1,
+                               'imagem': 'tv2000_t05_p03.jpg'}],
+ 'Malhação — fase Vagabanda': [{'pergunta': 'Qual banda fictícia marcou a temporada de Malhação de 2004?',
+                                'alternativas': ['Vagabanda', 'Mamonas Assassinas', 'Rebeldes'],
+                                'correta': 0,
+                                'imagem': 'tv2000_t06_p01.jpg'},
+                               {'pergunta': 'Qual atriz interpretou Natasha, vocalista da Vagabanda?',
+                                'alternativas': ['Alinne Moraes', 'Marjorie Estiano', 'Juliana Paes'],
+                                'correta': 1,
+                                'imagem': 'tv2000_t06_p02.jpg'},
+                               {'pergunta': 'Qual era o nome do colégio que marcou essa fase de Malhação?',
+                                'alternativas': ['Elite Way School', 'Escola Mundial', 'Múltipla Escolha'],
+                                'correta': 2,
+                                'imagem': 'tv2000_t06_p03.jpg'}],
+ 'Rebelde': [{'pergunta': 'Como se chamava o colégio da novela mexicana Rebelde?',
+              'alternativas': ['Elite Way School', 'Múltipla Escolha', 'Escola Mundial'],
+              'correta': 0,
+              'imagem': 'tv2000_t07_p01.jpg'},
+             {'pergunta': 'Qual personagem era interpretada por Anahí?',
+              'alternativas': ['Mia Colucci', 'Lupita Fernández', 'Roberta Pardo'],
+              'correta': 0,
+              'imagem': 'tv2000_t07_p02.jpg'},
+             {'pergunta': 'Qual grupo musical nasceu dentro da novela e conquistou fãs fora dela?',
+              'alternativas': ['RBD', 'Rouge', "Br'oz"],
+              'correta': 0,
+              'imagem': 'tv2000_t07_p03.jpg'}],
+ 'Da Cor do Pecado': [{'pergunta': 'Qual era o nome da protagonista interpretada por Taís Araújo?',
+                       'alternativas': ['Tina', 'Preta', 'Bárbara'],
+                       'correta': 1,
+                       'imagem': 'tv2000_t08_p01.jpg'},
+                      {'pergunta': 'Reynaldo Gianecchini interpretava quais irmãos gêmeos?',
+                       'alternativas': ['Rodrigo e Diogo', 'Paco e Apolo', 'Jorge e Miguel'],
+                       'correta': 1,
+                       'imagem': 'tv2000_t08_p02.jpg'},
+                      {'pergunta': 'Qual família da novela era conhecida pelos filhos ligados às lutas?',
+                       'alternativas': ['Família Tufão', 'Família Sardinha', 'Família Silva'],
+                       'correta': 1,
+                       'imagem': 'tv2000_t08_p03.jpg'}],
+ 'Senhora do Destino': [{'pergunta': 'Qual era o nome da filha de Maria do Carmo sequestrada ainda bebê?',
+                         'alternativas': ['Maria Eduarda', 'Rita', 'Lindalva'],
+                         'correta': 2,
+                         'imagem': 'tv2000_t09_p01.jpg'},
+                        {'pergunta': 'Com qual nome a filha sequestrada foi criada por Nazaré?',
+                         'alternativas': ['Angélica', 'Cláudia', 'Isabel'],
+                         'correta': 2,
+                         'imagem': 'tv2000_t09_p02.jpg'},
+                        {'pergunta': 'Quem interpretou a vilã Nazaré Tedesco?',
+                         'alternativas': ['Susana Vieira', 'Renata Sorrah', 'Vera Fischer'],
+                         'correta': 1,
+                         'imagem': 'tv2000_t09_p03.jpg'}],
+ 'Chocolate com Pimenta': [{'pergunta': 'Como se chamava a fábrica de chocolates ligada à história de Ana '
+                                        'Francisca?',
+                            'alternativas': ['Bombom Real', 'Doce Ventura', 'Bombom'],
+                            'correta': 2,
+                            'imagem': 'tv2000_t10_p01.jpg'},
+                           {'pergunta': 'Qual era o nome da cidade fictícia onde a novela se passava?',
+                            'alternativas': ['Seropédica', 'Asa Branca', 'Ventura'],
+                            'correta': 2,
+                            'imagem': 'tv2000_t10_p02.jpg'},
+                           {'pergunta': 'Quem interpretou Danilo, par romântico de Ana Francisca?',
+                            'alternativas': ['Reynaldo Gianecchini', 'Rodrigo Santoro', 'Murilo Benício'],
+                            'correta': 2,
+                            'imagem': 'tv2000_t10_p03.jpg'}],
+ 'As Visões da Raven': [{'pergunta': 'Qual habilidade especial Raven Baxter possuía?',
+                         'alternativas': ['Ler qualquer pensamento',
+                                          'Ficar invisível',
+                                          'Ter visões do futuro'],
+                         'correta': 2,
+                         'imagem': 'tv2000_t11_p01.jpg'},
+                        {'pergunta': 'Como se chamavam os dois melhores amigos de Raven?',
+                         'alternativas': ['Chelsea e Eddie', 'Miley e Oliver', 'Alex e Justin'],
+                         'correta': 0,
+                         'imagem': 'tv2000_t11_p02.jpg'},
+                        {'pergunta': 'Qual era o nome do irmão mais novo de Raven?',
+                         'alternativas': ['Zack', 'Cory', 'Cody'],
+                         'correta': 1,
+                         'imagem': 'tv2000_t11_p03.jpg'}],
+ 'Kim Possible': [{'pergunta': 'Qual era o nome do melhor amigo e parceiro de missões de Kim?',
+                   'alternativas': ['Dr. Drakken', 'Wade', 'Ron Stoppable'],
+                   'correta': 2,
+                   'imagem': 'tv2000_t12_p01.jpg'},
+                  {'pergunta': 'Quem ajudava Kim à distância com tecnologia e informações?',
+                   'alternativas': ['Shego', 'Rufus', 'Wade'],
+                   'correta': 2,
+                   'imagem': 'tv2000_t12_p02.jpg'},
+                  {'pergunta': 'Qual vilã era conhecida pelos poderes de energia verde nas mãos?',
+                   'alternativas': ['Bonnie', 'Monique', 'Shego'],
+                   'correta': 2,
+                   'imagem': 'tv2000_t12_p03.jpg'}],
+ 'Três Espiãs Demais!': [{'pergunta': 'Qual é o trio principal de Três Espiãs Demais!?',
+                          'alternativas': ['Sam, Clover e Alex',
+                                           'Bloom, Stella e Flora',
+                                           'Lindinha, Florzinha e Docinho'],
+                          'correta': 0,
+                          'imagem': 'tv2000_t13_p01.jpg'},
+                         {'pergunta': 'Quem costumava convocar as espiãs para as missões?',
+                          'alternativas': ['Jerry', 'Dr. Drakken', 'Professor Utônio'],
+                          'correta': 0,
+                          'imagem': 'tv2000_t13_p02.jpg'},
+                         {'pergunta': 'Como se chama a organização para a qual as três trabalham?',
+                          'alternativas': ['WOOHP', 'S.H.I.E.L.D.', 'M.I.B.'],
+                          'correta': 0,
+                          'imagem': 'tv2000_t13_p03.jpg'}],
+ 'As Aventuras de Jackie Chan': [{'pergunta': 'Qual é o parentesco de Jade com Jackie?',
+                                  'alternativas': ['Filha', 'Irmã', 'Sobrinha'],
+                                  'correta': 2,
+                                  'imagem': 'tv2000_t14_p01.jpg'},
+                                 {'pergunta': 'Na primeira temporada, os talismãs estão ligados a qual '
+                                              'conjunto de símbolos?',
+                                  'alternativas': ['Animais do zodíaco chinês',
+                                                   'Planetas do Sistema Solar',
+                                                   'Signos do zodíaco ocidental'],
+                                  'correta': 0,
+                                  'imagem': 'tv2000_t14_p02.jpg'},
+                                 {'pergunta': 'Qual personagem ajudava Jackie com conhecimentos de magia?',
+                                  'alternativas': ['Valmont', 'Tio', 'Capitão Black'],
+                                  'correta': 1,
+                                  'imagem': 'tv2000_t14_p03.jpg'}],
+ 'Ben 10 — clássico': [{'pergunta': 'Como se chama o dispositivo que permite a Ben virar alienígenas?',
+                        'alternativas': ['Megazord', 'Digivice', 'Omnitrix'],
+                        'correta': 2,
+                        'imagem': 'tv2000_t15_p01.jpg'},
+                       {'pergunta': 'Quem acompanha Ben nas férias da série clássica?',
+                        'alternativas': ['Kevin e Julie', 'Seus pais e um professor', 'Gwen e o avô Max'],
+                        'correta': 2,
+                        'imagem': 'tv2000_t15_p02.jpg'},
+                       {'pergunta': 'Qual vilão da série clássica queria tomar o Omnitrix de Ben?',
+                        'alternativas': ['Mojo Jojo', 'Mandark', 'Vilgax'],
+                        'correta': 2,
+                        'imagem': 'tv2000_t15_p03.jpg'}]}
 
-LEGENDAS = {
-    "Mistérios das profundezas": "Mistérios das profundezas: você consegue acertar as três perguntas? Comente quantas acertou!\n#JuhQuiz #Quiz #Curiosidades #Desafio",
-    "Vulcões e fenômenos da Terra": "Vulcões e fenômenos da Terra: você consegue acertar as três perguntas? Comente quantas acertou!\n#JuhQuiz #Quiz #Curiosidades #Desafio",
-    "Segredos da Lua": "Segredos da Lua: você consegue acertar as três perguntas? Comente quantas acertou!\n#JuhQuiz #Quiz #Curiosidades #Desafio",
-    "Plantas surpreendentes": "Plantas surpreendentes: você consegue acertar as três perguntas? Comente quantas acertou!\n#JuhQuiz #Quiz #Curiosidades #Desafio",
-    "Animais mestres do disfarce": "Animais mestres do disfarce: você consegue acertar as três perguntas? Comente quantas acertou!\n#JuhQuiz #Quiz #Curiosidades #Desafio",
-    "Pedras preciosas e minerais": "Pedras preciosas e minerais: você consegue acertar as três perguntas? Comente quantas acertou!\n#JuhQuiz #Quiz #Curiosidades #Desafio",
-    "Invenções que já existiam na Antiguidade": "Invenções que já existiam na Antiguidade: você consegue acertar as três perguntas? Comente quantas acertou!\n#JuhQuiz #Quiz #Curiosidades #Desafio",
-    "Material escolar de antigamente": "Material escolar de antigamente: você consegue acertar as três perguntas? Comente quantas acertou!\n#JuhQuiz #Quiz #Curiosidades #Desafio",
-    "Doces que marcaram a infância": "Doces que marcaram a infância: você consegue acertar as três perguntas? Comente quantas acertou!\n#JuhQuiz #Quiz #Curiosidades #Desafio",
-    "Orelhão e telefone de disco": "Orelhão e telefone de disco: você consegue acertar as três perguntas? Comente quantas acertou!\n#JuhQuiz #Quiz #Curiosidades #Desafio",
-    "Fotografias antes do celular": "Fotografias antes do celular: você consegue acertar as três perguntas? Comente quantas acertou!\n#JuhQuiz #Quiz #Curiosidades #Desafio",
-    "Cartas e bilhetinhos": "Cartas e bilhetinhos: você consegue acertar as três perguntas? Comente quantas acertou!\n#JuhQuiz #Quiz #Curiosidades #Desafio",
-    "Mercadinhos de bairro de antigamente": "Mercadinhos de bairro de antigamente: você consegue acertar as três perguntas? Comente quantas acertou!\n#JuhQuiz #Quiz #Curiosidades #Desafio",
-    "Fliperamas e videogames de cartucho": "Fliperamas e videogames de cartucho: você consegue acertar as três perguntas? Comente quantas acertou!\n#JuhQuiz #Quiz #Curiosidades #Desafio",
-    "Rádio e fitas cassete": "Rádio e fitas cassete: você consegue acertar as três perguntas? Comente quantas acertou!\n#JuhQuiz #Quiz #Curiosidades #Desafio"
-}
-
+LEGENDAS = {'TV Globinho': 'TV Globinho: será que você lembra desses detalhes? Acerte as 3 e conte seu resultado!\n'
+                '#JuhQuiz #Quiz #Anos2000 #Nostalgia',
+ 'Bom Dia & Cia': 'Bom Dia & Cia: será que você lembra desses detalhes? Acerte as 3 e conte seu resultado!\n'
+                  '#JuhQuiz #Quiz #Anos2000 #Nostalgia',
+ 'Vídeo Show': 'Vídeo Show: será que você lembra desses detalhes? Acerte as 3 e conte seu resultado!\n'
+               '#JuhQuiz #Quiz #Anos2000 #Nostalgia',
+ 'Pânico na TV': 'Pânico na TV: será que você lembra desses detalhes? Acerte as 3 e conte seu resultado!\n'
+                 '#JuhQuiz #Quiz #Anos2000 #Nostalgia',
+ 'Sítio do Picapau Amarelo': 'Sítio do Picapau Amarelo: será que você lembra desses detalhes? Acerte as 3 e '
+                             'conte seu resultado!\n'
+                             '#JuhQuiz #Quiz #Anos2000 #Nostalgia',
+ 'Malhação — fase Vagabanda': 'Malhação — fase Vagabanda: será que você lembra desses detalhes? Acerte as 3 '
+                              'e conte seu resultado!\n'
+                              '#JuhQuiz #Quiz #Anos2000 #Nostalgia',
+ 'Rebelde': 'Rebelde: será que você lembra desses detalhes? Acerte as 3 e conte seu resultado!\n'
+            '#JuhQuiz #Quiz #Anos2000 #Nostalgia',
+ 'Da Cor do Pecado': 'Da Cor do Pecado: será que você lembra desses detalhes? Acerte as 3 e conte seu '
+                     'resultado!\n'
+                     '#JuhQuiz #Quiz #Anos2000 #Nostalgia',
+ 'Senhora do Destino': 'Senhora do Destino: será que você lembra desses detalhes? Acerte as 3 e conte seu '
+                       'resultado!\n'
+                       '#JuhQuiz #Quiz #Anos2000 #Nostalgia',
+ 'Chocolate com Pimenta': 'Chocolate com Pimenta: será que você lembra desses detalhes? Acerte as 3 e conte '
+                          'seu resultado!\n'
+                          '#JuhQuiz #Quiz #Anos2000 #Nostalgia',
+ 'As Visões da Raven': 'As Visões da Raven: será que você lembra desses detalhes? Acerte as 3 e conte seu '
+                       'resultado!\n'
+                       '#JuhQuiz #Quiz #Anos2000 #Nostalgia',
+ 'Kim Possible': 'Kim Possible: será que você lembra desses detalhes? Acerte as 3 e conte seu resultado!\n'
+                 '#JuhQuiz #Quiz #Anos2000 #Nostalgia',
+ 'Três Espiãs Demais!': 'Três Espiãs Demais!: será que você lembra desses detalhes? Acerte as 3 e conte seu '
+                        'resultado!\n'
+                        '#JuhQuiz #Quiz #Anos2000 #Nostalgia',
+ 'As Aventuras de Jackie Chan': 'As Aventuras de Jackie Chan: será que você lembra desses detalhes? Acerte '
+                                'as 3 e conte seu resultado!\n'
+                                '#JuhQuiz #Quiz #Anos2000 #Nostalgia',
+ 'Ben 10 — clássico': 'Ben 10 — clássico: será que você lembra desses detalhes? Acerte as 3 e conte seu '
+                      'resultado!\n'
+                      '#JuhQuiz #Quiz #Anos2000 #Nostalgia'}
